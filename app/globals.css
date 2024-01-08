@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:wght@300&family=Rubik&display=swap");
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-family: "Cairo", sans-serif;
+}

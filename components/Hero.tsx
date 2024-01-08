@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <>
       <div className="md:mx-[300px]">
-        <div className="mx-[30%]">
+        <div className="mx-[15%]">
           <Image src="/albaik.png" alt="Albaik" width={600} height={600} />
         </div>
         <div>
@@ -13,11 +13,9 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <p className="text-center text-wrap mx-[500px] font-semibold text-xl">
+      <p className="text-center m-[5%] text-wrap font-semibold text-xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, nisi.
-        Iusto, accusantium voluptatibus delectus impedit suscipit magnam sit
-        qui, velit deleniti, illo quod hic quia necessitatibus deserunt dolorum
-        cumque beatae!
+        Iusto, illo quod hic quia necessitatibus deserunt dolorum cumque beatae!
       </p>
     </>
   );
