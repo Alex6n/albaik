@@ -3,14 +3,14 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <>
-      <div className="flex flex-cols-2 justify-center my-20 mx-[300px]">
+      <div className="md:mx-[300px]">
+        <div className="mx-[30%]">
+          <Image src="/albaik.png" alt="Albaik" width={600} height={600} />
+        </div>
         <div>
-          <h1 className="text-[100px] font-bold mt-10 bg-gradient-to-r  from-accent via-primary to-secondary inline-block text-transparent bg-clip-text tracking-tight">
+          <h1 className="mx-[5%] leading-snug text-5xl md:text-[70px] text-center font-bold bg-gradient-to-r from-accent via-primary to-secondary inline-block text-transparent bg-clip-text tracking-tight">
             Savor the Spice, Embrace the Crisp!
           </h1>
-        </div>
-        <div className="">
-          <Image src="/albaik.png" alt="Albaik" width={600} height={600} />
         </div>
       </div>
       <p className="text-center text-wrap mx-[500px] font-semibold text-xl">
