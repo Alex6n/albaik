@@ -11,8 +11,7 @@ interface HeaderProps {
 
 const Header = ({ navItems }: HeaderProps) => {
   return (
-    <>
-      <div className="bg-[#CE3737] w-full h-[25%] md:h-[12%] absolute z-[-100] top-0" />
+    <div className="bg-[#CE3737] w-full py-[1px]">
       <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex w-full justify-center md:block">
           <Link href="/">
@@ -25,7 +24,7 @@ const Header = ({ navItems }: HeaderProps) => {
             <Link
               key={navItem.label}
               href={navItem.href}
-              className="text-white duration-700 hover:bg-gradient-to-r from-primary to-secondary inline-block hover:text-transparent bg-clip-text transition-all tracking-wide"
+              className="text-white duration-700 hover:bg-gradient-to-r from-primary to-secondary inline-block hover:text-transparent bg-clip-text transition-all tracking-wider"
             >
               {navItem.label}
             </Link>
@@ -41,7 +40,7 @@ const Header = ({ navItems }: HeaderProps) => {
           </Link>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
