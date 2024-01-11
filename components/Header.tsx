@@ -11,7 +11,7 @@ interface HeaderProps {
 
 const Header = ({ navItems }: HeaderProps) => {
   return (
-    <div className="bg-[#CE3737] w-full py-[1px] border-b-[4px] border-zinc-200">
+    <div className="bg-[#CE3737] w-full py-[1px] border-b-[3px] border-zinc-200">
       <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex w-full justify-center md:block">
           <Link href="/">
