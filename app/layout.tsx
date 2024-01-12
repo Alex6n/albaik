@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-background">
+      <body className="bg-gradient-radial from-primary to-[#CE3737]">
         <Header navItems={navItems} />
         {children}
       </body>
