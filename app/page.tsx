@@ -1,7 +1,15 @@
 import Hero from "@/components/Hero";
 import Values from "@/components/Values";
 import Button from "@/components/ui/Button";
-import { BookOpen, CheckSquare, Timer } from "lucide-react";
+import {
+  BookOpen,
+  CheckSquare,
+  Heart,
+  HeartHandshake,
+  Shield,
+  Timer,
+  Trophy,
+} from "lucide-react";
 
 // TODO : consider making the bg color of the fist section red
 // TODO : copy mobile app functionality
@@ -10,19 +18,19 @@ import { BookOpen, CheckSquare, Timer } from "lucide-react";
 const VALUES = [
   {
     name: "Quality of life",
-    Icon: Timer,
+    Icon: Heart,
   },
   {
     name: "Ethics",
-    Icon: CheckSquare,
+    Icon: Shield,
   },
   {
     name: "Solidarity",
-    Icon: BookOpen,
+    Icon: HeartHandshake,
   },
   {
     name: "Excellence",
-    Icon: BookOpen,
+    Icon: Trophy,
   },
 ];
 

@@ -9,7 +9,7 @@ interface HeroProps {
 
 const Hero = ({ title, description, bgImage, children }: HeroProps) => {
   return (
-    <div className="relative border-b-[3px] border-zinc-200">
+    <div className="relative">
       <div className="w-full h-[50vh] md:h-[80vh] top-0 absolute bg-gray-900/50 justify-center">
         <div className="w-full flex justify-center">
           <h1 className="text-background text-center mt-28 md:mt-36 leading-snug text-5xl md:text-[95px] lg:text-[115px] font-bold tracking-tight max-w-5xl albaik">
