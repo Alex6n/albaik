@@ -18,3 +18,8 @@ html {
 .albaik {
   font-family: "Albaik";
 }
+
+.bg-hats {
+  background-image: url("../public/hats_bg.svg");
+  background-position: center;
+}

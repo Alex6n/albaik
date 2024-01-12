@@ -1,9 +1,30 @@
 import Hero from "@/components/Hero";
+import Values from "@/components/Values";
 import Button from "@/components/ui/Button";
+import { BookOpen, CheckSquare, Timer } from "lucide-react";
 
 // TODO : consider making the bg color of the fist section red
 // TODO : copy mobile app functionality
 // TODO : fix nav items transitions
+
+const VALUES = [
+  {
+    name: "Quality of life",
+    Icon: Timer,
+  },
+  {
+    name: "Ethics",
+    Icon: CheckSquare,
+  },
+  {
+    name: "Solidarity",
+    Icon: BookOpen,
+  },
+  {
+    name: "Excellence",
+    Icon: BookOpen,
+  },
+];
 
 export default function Home() {
   return (
@@ -20,7 +41,13 @@ export default function Home() {
           Our Core Values
         </Button> */}
       </Hero>
-      {/* TODO: Values */}
+
+      <Values
+        heading="ALBAIK Core Values"
+        label="Who we are"
+        description="The ALBAIK values form the basis of the company culture. They ensure that the brand, Team Members, and Customers are always protected."
+        values={VALUES}
+      />
     </main>
   );
 }
