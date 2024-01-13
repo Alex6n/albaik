@@ -1,4 +1,6 @@
 import Hero from "@/components/Hero";
+import Info from "@/components/Info";
+import InfoContainer from "@/components/InfoContainer";
 import Values from "@/components/Values";
 import Button from "@/components/ui/Button";
 import {
@@ -53,9 +55,17 @@ export default function Home() {
       <Values
         heading="ALBAIK Core Values"
         label="Who we are"
-        description="The ALBAIK values form the basis of the company culture. They ensure that the brand, Team Members, and Customers are always protected."
+        description="ALBAIK values form the basis of the company culture. They ensure that the brand, Team Members, and Customers are always protected."
         values={VALUES}
       />
+
+      <InfoContainer image="/history.jpg" imageAlt="history">
+        <Info
+          label="Since 1974"
+          heading="Our Story"
+          description="ALBAIK's story began in 1974 in the city of Jeddah in the Kingdom of Saudi Arabia when the late Shakour AbuGhazalah saw there was a need for high quality affordable food, served fast and courteously, in a clean and inviting environment. Putting all his hard-earned savings into this venture, Shakour wrote the first chapter of ALBAIK, being the first in the market to introduce the Broast chicken concept in all of Saudi Arabia."
+        />
+      </InfoContainer>
     </main>
   );
 }
