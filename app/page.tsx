@@ -59,7 +59,7 @@ export default function Home() {
         values={VALUES}
       />
 
-      <InfoContainer image="/history.jpg" imageAlt="history">
+      <InfoContainer image="/history.jpg" imageAlt="history" imageFirst={false}>
         <Info
           label="Since 1974"
           heading="Our Story"
