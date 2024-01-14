@@ -13,7 +13,7 @@ interface FeaturesProps {
 const Values = ({ values, heading, label, description }: FeaturesProps) => {
   return (
     <section>
-      <div className="text-background bg-hats bg-[#CE3737]/90 p-16 md:mx-28 my-10 rounded-xl">
+      <div className="text-background bg-hats bg-[#CE3737]/90 p-16 md:rounded-xl md:mx-12 lg:mx-24 xl:mx-28 my-10">
         <div className="w-full">
           <h2 className="uppercase font-bold text-lg rounded-lg border-y border-background/10 w-fit px-2">
             {label}

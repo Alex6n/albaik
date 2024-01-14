@@ -3,15 +3,7 @@ import Info from "@/components/Info";
 import InfoContainer from "@/components/InfoContainer";
 import Values from "@/components/Values";
 import Button from "@/components/ui/Button";
-import {
-  BookOpen,
-  CheckSquare,
-  Heart,
-  HeartHandshake,
-  Shield,
-  Timer,
-  Trophy,
-} from "lucide-react";
+import { Heart, HeartHandshake, Shield, Trophy } from "lucide-react";
 
 // TODO : consider making the bg color of the fist section red
 // TODO : copy mobile app functionality
@@ -59,11 +51,26 @@ export default function Home() {
         values={VALUES}
       />
 
-      <InfoContainer image="/history.jpg" imageAlt="history" imageFirst={false}>
+      <InfoContainer image="/history.jpg" imageAlt="history">
         <Info
           label="Since 1974"
           heading="Our Story"
           description="ALBAIK's story began in 1974 in the city of Jeddah in the Kingdom of Saudi Arabia when the late Shakour AbuGhazalah saw there was a need for high quality affordable food, served fast and courteously, in a clean and inviting environment. Putting all his hard-earned savings into this venture, Shakour wrote the first chapter of ALBAIK, being the first in the market to introduce the Broast chicken concept in all of Saudi Arabia."
+        />
+      </InfoContainer>
+      <InfoContainer
+        image="/purpose.jpg"
+        imageAlt="history"
+        imagePosition="first"
+      >
+        <Info
+          label="Driven by"
+          heading="Our Purpose"
+          description="We shall always protect the AMANA that God has blessed us with, and shall work together to nourish and spread it in a responsible way so its goodness can be enjoyed by everyone, everywhere the world over."
+          heading2="Our Vision"
+          description2="Putting MMMMM's and WOOOW's on our customers' lips every time, everywhere in the world."
+          heading3="Our Mission"
+          description3="100% ALBAIK Customer love at all times."
         />
       </InfoContainer>
     </main>
