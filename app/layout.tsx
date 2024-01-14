@@ -13,15 +13,15 @@ export const metadata: Metadata = {
 const navItems = [
   {
     label: "Story",
-    href: "#",
+    href: "#story",
   },
   {
     label: "Purpose",
-    href: "#",
+    href: "#purpose",
   },
   {
     label: "Menu",
-    href: "#",
+    href: "#menu",
   },
 ];
 

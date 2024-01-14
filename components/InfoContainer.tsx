@@ -8,6 +8,7 @@ interface InfoContainerProps {
   image: string;
   imageAlt: string;
   imagePosition?: "first" | "last";
+  id?: string;
 }
 
 const InfoContainer = ({
@@ -15,11 +16,12 @@ const InfoContainer = ({
   image,
   imageAlt,
   imagePosition = "last",
+  id,
 }: InfoContainerProps) => {
   const matches = useMediaQuery("(max-width:1020px)"); // md breakpoint in Material-UI is 960px
 
   return (
-    <section className="md:mx-12 lg:mx-24 xl:mx-28 my-10">
+    <section className="md:mx-12 lg:mx-24 xl:mx-28 my-10" id={id}>
       <div className="overflow-hidden md:rounded-xl grid grid-rows-2 lg:flex lg:flex-cols-2 ">
         {!matches && imagePosition === "first" && (
           <div className="relative w-full">
