@@ -3,21 +3,16 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Cairo&family=Open+Sans:wght@300&family=Rubik&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 @font-face {
-  font-family: "Albaik";
-  src: url("../public/albaikenglish.ttf") format("truetype");
+  font-family: "Rubik";
+  src: url("../public/Rubik-Bold.ttf") format("truetype");
 }
 
 html {
-  font-family: "Kanit", "Cairo", sans-serif;
+  font-family: "Lato", "Rubik", sans-serif;
   scroll-behavior: smooth;
-}
-
-.albaik {
-  font-family: "Albaik";
 }
 
 .bg-hats {

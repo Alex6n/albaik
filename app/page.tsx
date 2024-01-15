@@ -38,10 +38,10 @@ export default function Home() {
             tenetur asperiores consectetur nemo."
         bgImage="/home_hero.jpg"
       >
-        {/* <Button size="lg">Explore the Menu</Button>
+        <Button size="lg">Explore the Menu</Button>
         <Button size="lg" primary={false}>
           Our Core Values
-        </Button> */}
+        </Button>
       </Hero>
 
       <Values

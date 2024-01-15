@@ -15,7 +15,7 @@ const Values = ({ values, heading, label, description }: FeaturesProps) => {
     <section>
       <div className="text-background bg-hats bg-[#CE3737]/90 p-16 md:rounded-xl md:mx-12 lg:mx-24 xl:mx-28 my-10">
         <div className="w-full">
-          <h2 className="uppercase font-bold text-lg rounded-lg border-y border-background/10 w-fit px-2">
+          <h2 className="tracking-wider uppercase font-bold text-lg rounded-lg border-y border-background/10 w-fit px-2">
             {label}
           </h2>
         </div>
@@ -23,7 +23,7 @@ const Values = ({ values, heading, label, description }: FeaturesProps) => {
         <div className="grid grid-cols-1 xl:grid-cols-3">
           <div className="lg:pr-10 xl:border-r border-background/20">
             <h1 className="text-4xl font-bold my-2">{heading}</h1>
-            <p className="text-zinc-300 text-xl font-semibold my-2 max-w-[500px]">
+            <p className="text-zinc-300 text-xl font-semibold tracking-wide my-2 max-w-[500px]">
               {description}
             </p>
           </div>

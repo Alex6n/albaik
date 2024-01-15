@@ -32,7 +32,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-[#FFDDCC]">
+      <body className="bg-zinc-100">
         <Header navItems={navItems} />
         {children}
       </body>
