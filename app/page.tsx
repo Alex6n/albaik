@@ -35,17 +35,16 @@ export default function Home() {
         title="Savor the Spice, Embrace the Crisp!"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             beatae suscipit voluptatibus consequuntur dolore. Inventore nostrum
-            tenetur asperiores consectetur nemo."
+            tenetur asperiores consectetur"
         bgImage="/home_hero.jpg"
       >
-        <Button size="lg">Explore the Menu</Button>
-        <Button size="lg" primary={false}>
-          Our Core Values
+        <Button size="md" className="px-20">
+          Explore the Menu
         </Button>
       </Hero>
 
       <Values
-        heading="ALBAIK Core Values"
+        heading="Our Core Values"
         label="Who we are"
         description="ALBAIK values form the basis of the company culture. They ensure that the brand, Team Members, and Customers are always protected."
         values={VALUES}

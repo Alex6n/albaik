@@ -6,12 +6,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 @font-face {
-  font-family: "Rubik";
-  src: url("../public/Rubik-Bold.ttf") format("truetype");
+  font-family: "Rubik-Medium";
+  src: url("../public/Rubik-Medium.ttf") format("truetype");
 }
 
 html {
-  font-family: "Lato", "Rubik", sans-serif;
+  font-family: "Lato", "Rubik-Medium", sans-serif;
   scroll-behavior: smooth;
 }
 

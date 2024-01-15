@@ -14,9 +14,9 @@ const Button = ({ children, primary, size, className, href }: ButtonProps) => {
     <Link
       href={href || "#"}
       className={cn(
-        "h-fit border border-gray-900/40 px-4 py-2 text-lg rounded-2xl bg-primary hover:bg-primary/70 text-red-950 hover:text-background/90 cursor-pointer font-semibold m-1 hover:translate-y-[-2px] transition-all hover:shadow-md duration-500",
+        "h-fit border border-gray-900/40 px-4 py-2 text-lg rounded-2xl bg-primary text-red-950 cursor-pointer font-semibold m-1 hover:translate-y-[-2px] transition-all hover:shadow-md duration-500",
         primary === false &&
-          "bg-accent/30 border-none hover:bg-transparent hover:shadow-none text-zinc-200 hover:text-background",
+          "bg-secondary border-none hover:bg-transparent hover:shadow-none text-zinc-200 hover:text-background",
         size === "lg" && "text-xl px-5 py-3 m-2",
         size === "sm" && "text-md px-3",
         className

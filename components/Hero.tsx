@@ -10,7 +10,7 @@ interface HeroProps {
 const Hero = ({ title, description, bgImage, children }: HeroProps) => {
   return (
     <div className="relative">
-      <div className="w-full h-[50vh] md:h-[80vh] top-0 absolute bg-gray-900/50 justify-center">
+      <div className="w-full h-[50vh] md:h-[83vh] top-0 absolute bg-gray-900/50 justify-center">
         <div className="w-full flex justify-center">
           <h1 className="text-background text-center mt-28 md:mt-36 leading-snug text-5xl md:text-[95px] lg:text-[115px] font-extrabold tracking-tight max-w-5xl">
             {title}
@@ -30,7 +30,7 @@ const Hero = ({ title, description, bgImage, children }: HeroProps) => {
         alt={bgImage}
         width={1000}
         height={1000}
-        className="object-cover w-full h-[50vh] md:h-[80vh]"
+        className="object-cover w-full h-[50vh] md:h-[83vh]"
       />
     </div>
   );
