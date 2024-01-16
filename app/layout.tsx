@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,6 +36,7 @@ export default function RootLayout({
       <body className="bg-zinc-100">
         <Header navItems={navItems} />
         {children}
+        <Footer navItems={navItems} />
       </body>
     </html>
   );

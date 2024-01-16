@@ -38,7 +38,7 @@ export default function Home() {
             tenetur asperiores consectetur"
         bgImage="/home_hero.jpg"
       >
-        <Button size="md" className="px-20">
+        <Button size="md" className="px-10">
           Explore the Menu
         </Button>
       </Hero>
