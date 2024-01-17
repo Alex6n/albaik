@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Button from "./ui/Button";
+import { Phone } from "lucide-react";
 
-// TODO: Change Language
 interface FooterProps {
   navItems: {
     label: string;
@@ -16,7 +16,7 @@ interface FooterProps {
 
 const Footer = ({ navItems, policyLinks }: FooterProps) => {
   return (
-    <div className="bg-[#CE3737]/90 w-full flex flex-col py-4">
+    <div className="bg-[#CE3737]/90 w-full flex flex-col py-4 absolute bottom-0">
       <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex justify-center my-4">
           <Image src="/kookoo_logo.svg" alt="logo" width={73} height={82} />
@@ -31,15 +31,14 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
         </div>
 
         <div className="flex flex-col items-center my-4 text-background bg-zinc-950/20 p-7 border border-background/30 rounded-xl">
-          <h1 className="font-bold tracking-widest uppercase text-lg">
-            Contact Us
-          </h1>
+          <h1 className="font-bold tracking-wider text-lg">Contact Us</h1>
           <Button
             size="lg"
             primary={false}
             className="underline px-10"
             href="tel:800 244 2245"
           >
+            <Phone className="w-5 h-5 inline mr-2" />
             800 244 2245
           </Button>
         </div>

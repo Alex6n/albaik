@@ -5,10 +5,6 @@ import Values from "@/components/Values";
 import Button from "@/components/ui/Button";
 import { Heart, HeartHandshake, Shield, Trophy } from "lucide-react";
 
-// TODO : consider making the bg color of the fist section red
-// TODO : copy mobile app functionality
-// TODO : fix nav items transitions
-
 const VALUES = [
   {
     name: "Quality of life",
