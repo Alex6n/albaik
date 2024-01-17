@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "./ui/Button";
 
 // TODO: Change Language
 interface FooterProps {
@@ -7,13 +8,17 @@ interface FooterProps {
     label: string;
     href: string;
   }[];
+  policyLinks: {
+    label: string;
+    href: string;
+  }[];
 }
 
-const Footer = ({ navItems }: FooterProps) => {
+const Footer = ({ navItems, policyLinks }: FooterProps) => {
   return (
-    <div className="bg-[#CE3737]/90 w-full py-[1px]">
-      <div className="md:flex flex-cols-3 justify-between items-center gap-10 mx-[15%] my-5">
-        <div className="flex w-full">
+    <div className="bg-[#CE3737]/90 w-full flex flex-col py-4">
+      <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
+        <div className="flex justify-center my-4">
           <Image src="/kookoo_logo.svg" alt="logo" width={73} height={82} />
           <div className="flex items-center min-h-full mx-5">
             <Image
@@ -25,17 +30,55 @@ const Footer = ({ navItems }: FooterProps) => {
           </div>
         </div>
 
-        <div className="justify-center font-bold flex flex-col text-lg tracking-widest text-center m-[5%] md:m-0">
-          {navItems.map((navItem) => (
-            <Link
-              key={navItem.label}
-              href={navItem.href}
-              className="text-white duration-700 hover:bg-gradient-to-r from-primary to-secondary inline-block hover:text-transparent bg-clip-text transition-all tracking-wider"
-            >
-              {navItem.label}
-            </Link>
-          ))}
+        <div className="flex flex-col items-center my-4 text-background bg-zinc-950/20 p-7 border border-background/30 rounded-xl">
+          <h1 className="font-bold tracking-widest uppercase text-lg">
+            Contact Us
+          </h1>
+          <Button
+            size="lg"
+            primary={false}
+            className="underline px-10"
+            href="tel:800 244 2245"
+          >
+            800 244 2245
+          </Button>
         </div>
+
+        <div className="flex gap-20">
+          <div className="font-bold flex flex-col text-lg text-white">
+            <h1 className="mb-2 tracking-wider">Website Map</h1>
+            {navItems.map((navItem) => (
+              <Link
+                key={navItem.label}
+                href={navItem.href}
+                className="text-zinc-200 text-[16px] font-semibold duration-700 hover:bg-gradient-to-r from-primary to-secondary inline-block hover:text-transparent bg-clip-text transition-all tracking-wider mt-1"
+              >
+                {navItem.label}
+              </Link>
+            ))}
+          </div>
+
+          <div className="font-bold flex flex-col text-lg text-white">
+            <h1 className="mb-2 tracking-wider">Policy</h1>
+            {policyLinks.map((link) => (
+              <Link
+                key={link.label}
+                href={link.href}
+                className="text-zinc-200 text-[16px] font-semibold duration-700 hover:bg-gradient-to-r from-primary to-secondary inline-block hover:text-transparent bg-clip-text transition-all tracking-wider mt-1"
+              >
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </div>
+
+      <div className="text-center text-background font-medium my-1">
+        © 2023 Copyright ALBAIK Food Systems Company.
+        <p>
+          ® All rights reserved ALBAIK and Logo are registered trademarks of the
+          ELBAIK Food Systems Company S.A.
+        </p>
       </div>
     </div>
   );

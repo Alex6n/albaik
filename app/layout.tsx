@@ -26,6 +26,14 @@ const navItems = [
   },
 ];
 
+const policyLinks = [
+  {
+    label: "Terms & Conditions",
+    href: "terms",
+  },
+  { label: "Food Safety Policy", href: "safety" },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -36,7 +44,7 @@ export default function RootLayout({
       <body className="bg-zinc-100">
         <Header navItems={navItems} />
         {children}
-        <Footer navItems={navItems} />
+        <Footer navItems={navItems} policyLinks={policyLinks} />
       </body>
     </html>
   );
