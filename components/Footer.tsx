@@ -16,7 +16,7 @@ interface FooterProps {
 
 const Footer = ({ navItems, policyLinks }: FooterProps) => {
   return (
-    <div className="bg-[#CE3737]/90 w-full flex flex-col py-4 absolute bottom-0">
+    <div className="bg-[#CE3737]/90 w-full flex flex-col py-4 relative bottom-0">
       <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex justify-center my-4">
           <Image src="/kookoo_logo.svg" alt="logo" width={73} height={82} />
