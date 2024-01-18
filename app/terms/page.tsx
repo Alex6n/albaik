@@ -1,5 +1,4 @@
 import DataCard from "@/components/DataCard";
-import data from "../../public/terms.json";
 
 const page = () => {
   return (
