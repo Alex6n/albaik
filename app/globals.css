@@ -19,3 +19,48 @@ html {
   background-image: url("../public/hats_bg.svg");
   background-position: center;
 }
+
+.data-card h1 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: hsla(0, 100%, 26%, 0.911);
+}
+
+.data-card h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin-bottom: 0.3em;
+  letter-spacing: 1px;
+  color: hsla(0, 100%, 26%, 0.911);
+}
+
+.data-card p {
+  font-size: 1.1em;
+  letter-spacing: 0.1px;
+  line-height: 1.8em;
+  color: hsl(0, 9%, 20%);
+}
+
+.data-card li {
+  font-size: 1.1em;
+  margin-bottom: 0.8em;
+  letter-spacing: 0.1px;
+  color: hsl(0, 9%, 20%);
+}
+
+.data-card ul {
+  list-style-type: circle;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.data-card ol {
+  list-style-type: decimal;
+  margin-top: 1em;
+  margin-left: 1.5em;
+}
+
+.data-card li::marker {
+  color: hsla(0, 100%, 26%, 0.911);
+}
