@@ -3,11 +3,10 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// TODO: TERMS PAGE
-// TODO: SAFTY PAGE
-
 // TODO: Menu Page
+// TODO: Menu Layout
 // TODO : copy mobile app functionality
+
 // TODO: Change Language
 // TODO: Consider anothor bg color
 // TODO: Refactor
@@ -20,15 +19,15 @@ export const metadata: Metadata = {
 const navItems = [
   {
     label: "Story",
-    href: "#story",
+    href: "/#story",
   },
   {
     label: "Purpose",
-    href: "#purpose",
+    href: "/#purpose",
   },
   {
     label: "Menu",
-    href: "#menu",
+    href: "/menu",
   },
 ];
 
@@ -37,7 +36,10 @@ const policyLinks = [
     label: "Terms & Conditions",
     href: "terms",
   },
-  { label: "Food Safety Policy", href: "safety" },
+  {
+    label: "Food Safety Policy",
+    href: "safety",
+  },
 ];
 
 export default function RootLayout({
