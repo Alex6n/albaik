@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import UserMenu from "./UserMenu";
 
 interface HeaderProps {
   navItems: {
@@ -13,13 +14,19 @@ const Header = ({ navItems }: HeaderProps) => {
     // border-b-[3px] border-zinc-200
     <div className="bg-[#CE3737]/90 w-full py-[1px]">
       <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 mx-[15%] my-5">
-        <div className="flex w-full justify-center md:block">
+        <div className="flex justify-center md:block min-h-[100px] min-w-[100px]">
           <Link href="/">
-            <Image src="/logo_en.png" alt="logo" width={130} height={130} />
+            <Image
+              src="/logo_en.png"
+              alt="logo"
+              width={130}
+              height={130}
+              className="my-3"
+            />
           </Link>
         </div>
 
-        <div className="justify-center font-bold flex gap-12 text-lg tracking-widest text-center m-[5%] md:m-0">
+        <div className="justify-center font-bold flex gap-12 text-lg tracking-widest text-center m-[5%] md:m-0 mb-8">
           {navItems.map((navItem) => (
             <Link
               key={navItem.label}
@@ -31,13 +38,15 @@ const Header = ({ navItems }: HeaderProps) => {
           ))}
         </div>
 
-        <div className="flex justify-center w-full md:w-fit">
+        <div className="flex flex-row gap-7 justify-center w-full md:w-fit">
           <Link
-            className="rounded-3xl border-zinc-300 border pb-1 font-semibold transition-all duration-700 hover:shadow-lg text-center text-white max-w-fit px-10"
+            className="rounded-lg border-zinc-300/30 border pb-1 font-normal transition-all duration-700 hover:shadow-lg text-center text-white max-w-fit px-5"
             href="#"
           >
             عربي
           </Link>
+
+          <UserMenu />
         </div>
       </div>
     </div>
