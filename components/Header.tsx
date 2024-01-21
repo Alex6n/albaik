@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import UserMenu from "./UserMenu";
+import Cart from "./Cart";
 
 interface HeaderProps {
   navItems: {
@@ -46,6 +47,7 @@ const Header = ({ navItems }: HeaderProps) => {
             عربي
           </Link>
 
+          <Cart />
           <UserMenu />
         </div>
       </div>
