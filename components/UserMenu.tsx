@@ -18,20 +18,20 @@ const UserMenu = () => {
           <User className="w-6 h-6" />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="md:mt-5">
+      <DropdownMenuContent className="md:mt-5 bg-background">
         <DropdownMenuLabel>
           {accout ? "Account Name" : "Guest"}
         </DropdownMenuLabel>
-        <DropdownMenuSeparator />
+        <DropdownMenuSeparator className="bg-zinc-300" />
         {accout ? (
           <>
             <Link href="/account">
-              <DropdownMenuItem className="hover:bg-slate-300 rounded-md hover:cursor-pointer">
+              <DropdownMenuItem className="hover:bg-primary/70 rounded-md hover:cursor-pointer">
                 My Account
               </DropdownMenuItem>
             </Link>
             <Link href="/orders">
-              <DropdownMenuItem className="hover:bg-slate-300 rounded-md hover:cursor-pointer">
+              <DropdownMenuItem className="hover:bg-primary/70 rounded-md hover:cursor-pointer">
                 Orders
               </DropdownMenuItem>
             </Link>
@@ -44,12 +44,12 @@ const UserMenu = () => {
         ) : (
           <>
             <Link href="/login">
-              <DropdownMenuItem className="hover:bg-slate-300 rounded-md hover:cursor-pointer">
+              <DropdownMenuItem className="hover:bg-primary/70 rounded-md hover:cursor-pointer">
                 Login
               </DropdownMenuItem>
             </Link>
             <Link href="/signup">
-              <DropdownMenuItem className="hover:bg-slate-300 rounded-md hover:cursor-pointer">
+              <DropdownMenuItem className="hover:bg-primary/70 rounded-md hover:cursor-pointer">
                 Sign Up
               </DropdownMenuItem>
             </Link>

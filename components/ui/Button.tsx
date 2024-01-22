@@ -6,10 +6,18 @@ interface ButtonProps {
   primary?: boolean;
   size?: "lg" | "md" | "sm";
   className?: string;
+  disabled?: boolean;
   href?: string;
 }
 
-const Button = ({ children, primary, size, className, href }: ButtonProps) => {
+const Button = ({
+  children,
+  primary,
+  size,
+  className,
+  href,
+  disabled,
+}: ButtonProps) => {
   return (
     <Link
       href={href || "#"}
@@ -19,6 +27,7 @@ const Button = ({ children, primary, size, className, href }: ButtonProps) => {
           "bg-secondary border-none hover:bg-transparent hover:shadow-none text-zinc-200 hover:text-background",
         size === "lg" && "text-xl px-5 py-3 m-2",
         size === "sm" && "text-md px-3",
+        disabled === false && "",
         className
       )}
     >

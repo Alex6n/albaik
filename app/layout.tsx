@@ -49,7 +49,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-zinc-100">
+      <body className="bg-background">
         <Header navItems={navItems} />
         {children}
         <Footer navItems={navItems} policyLinks={policyLinks} />
