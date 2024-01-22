@@ -41,7 +41,7 @@ const Header = ({ navItems }: HeaderProps) => {
 
         <div className="flex flex-row gap-7 justify-center w-full md:w-fit">
           <Link
-            className="rounded-lg border-zinc-300/30 border pb-1 font-normal transition-all duration-700 hover:shadow-lg text-center text-white max-w-fit px-5"
+            className="text-white duration-700 transition-all hover:text-primary hover:border-primary hover:cursor-pointer rounded-xl px-4 py-1 hover:bg-black/20"
             href="#"
           >
             عربي

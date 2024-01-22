@@ -13,10 +13,19 @@ import { Separator } from "./ui/separator";
 import Link from "next/link";
 import { ScrollArea } from "./ui/scroll-area";
 import Button from "./ui/Button";
+import CartItem from "./CartItem";
+
+const items = [
+  {
+    id: "123",
+    name: "item",
+    label: "chicken",
+    images: ["/home_hero.jpg"],
+    price: 100,
+  },
+];
 
 const Cart = () => {
-  const items = [1];
-
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2">
@@ -32,9 +41,9 @@ const Cart = () => {
           <>
             <div className="flex w-full flex-col pr-6">
               <ScrollArea>
-                {/* {items.map(({ product }) => (
-                  <CartItem product={product} key={product.id} />
-                ))} */}
+                {items.map((item) => (
+                  <CartItem item={item} key={item.id} />
+                ))}
               </ScrollArea>
             </div>
             <div className="space-y-4 pr-6">
@@ -54,7 +63,7 @@ const Cart = () => {
                 <SheetTrigger asChild>
                   <Button
                     href="/cart"
-                    className="w-full text-center border-none"
+                    className="w-full text-center border-none rounded-md"
                   >
                     Continue to Checkout
                   </Button>
