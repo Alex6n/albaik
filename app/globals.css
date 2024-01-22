@@ -64,3 +64,21 @@ html {
 .data-card li::marker {
   color: hsla(0, 100%, 26%, 0.911);
 }
+
+@media only screen and (max-height: 800px) {
+  .hero h1 {
+    font-size: 100px;
+  }
+}
+
+@media only screen and (max-height: 750px) {
+  .hero h1 {
+    font-size: 88px;
+  }
+}
+
+@media only screen and (max-height: 700px) {
+  .hero h1 {
+    font-size: 80px;
+  }
+}

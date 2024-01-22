@@ -3,10 +3,17 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
+// TODO: Finish Login and signup pages
+// TODO: Finish Cart Logic
+// TODO: Create Checkout Page
+// TODO: Create Orders Page
+// TODO: Create Middleware
+// TODO: Create Not found page
+// TODO: Menu Item Deatails Component
+// TODO: App should be fully responsive
 // TODO: Menu Page
 // TODO: Menu Layout
 // TODO : copy mobile app functionality
-
 // TODO: Change Language
 // TODO: Consider anothor bg color
 // TODO: Refactor
