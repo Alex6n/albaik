@@ -10,7 +10,7 @@ import {
 import { User } from "lucide-react";
 
 const UserMenu = () => {
-  const accout = true;
+  const accout = false;
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="focus:outline-none border-none ring-0">
@@ -36,7 +36,7 @@ const UserMenu = () => {
               </DropdownMenuItem>
             </Link>
             <Link href="/logout">
-              <DropdownMenuItem className="hover:bg-red-500/40 rounded-md hover:cursor-pointer">
+              <DropdownMenuItem className="hover:bg-accent/40 rounded-md hover:cursor-pointer">
                 Logout
               </DropdownMenuItem>
             </Link>

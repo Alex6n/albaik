@@ -1,5 +1,3 @@
-import DataCard from "@/components/DataCard";
-
 const page = () => {
   return (
     <div className="min-h-[53.9vh]">
