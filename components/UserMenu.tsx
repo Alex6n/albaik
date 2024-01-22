@@ -14,7 +14,9 @@ const UserMenu = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger className="focus:outline-none border-none ring-0">
-        <User className="text-white duration-700 transition-all hover:text-primary hover:border-primary hover:cursor-pointer rounded-xl p-1 w-9 h-9 hover:bg-black/20" />
+        <div className="text-white duration-700 transition-all hover:text-primary hover:border-primary hover:cursor-pointer rounded-xl p-2 hover:bg-black/20">
+          <User className="w-6 h-6" />
+        </div>
       </DropdownMenuTrigger>
       <DropdownMenuContent className="md:mt-5">
         <DropdownMenuLabel>

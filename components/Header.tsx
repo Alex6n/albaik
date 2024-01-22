@@ -14,8 +14,8 @@ const Header = ({ navItems }: HeaderProps) => {
   return (
     // border-b-[3px] border-zinc-200
     <div className="bg-[#CE3737]/90 w-full py-[1px]">
-      <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 mx-[15%] my-5">
-        <div className="flex justify-center md:block min-h-[100px] min-w-[100px]">
+      <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 lg:mx-[15%] md:mx-[5%] my-5">
+        <div className="flex flex-shrink-0 justify-center lg:w-fit md:block">
           <Link href="/">
             <Image
               src="/logo_en.png"
