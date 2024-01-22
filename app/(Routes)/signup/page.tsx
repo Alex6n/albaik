@@ -1,6 +1,7 @@
 import FormBox from "@/components/FormBox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import React from "react";
 
 const page = () => {
   const errors = {
@@ -13,13 +14,12 @@ const page = () => {
   };
 
   const isLoading = false;
-
   return (
     <FormBox
-      heading="Sign in to your account"
-      buttonTitle="Sign in"
-      linkTitle="Don't have an account?"
-      linkHref="/signup"
+      heading="Create an account"
+      buttonTitle="Sign up"
+      linkTitle="Already have an account?"
+      linkHref="/login"
     >
       <div className="grid gap-1 py-2">
         <Label htmlFor="mobile">Mobile</Label>
