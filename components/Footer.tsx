@@ -20,7 +20,7 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
       <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex justify-center my-4">
           <Image src="/kookoo_logo.svg" alt="logo" width={73} height={82} />
-          <div className="flex items-center min-h-full mx-5">
+          <div className="flex items-center min-h-full mx-5 flex-shrink-0 ">
             <Image
               src="/saudi_made_logo.svg"
               alt="logo"
@@ -30,16 +30,18 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center my-4 text-background bg-zinc-950/20 p-7 border border-background/30 rounded-xl">
+        <div className="flex flex-col items-center my-4 text-background bg-zinc-950/20 p-7 border border-background/30 rounded-xl lg:ml-12">
           <h1 className="font-bold tracking-wider text-lg">Contact Us</h1>
           <Button
             size="lg"
             primary={false}
-            className="underline px-10"
+            className="underline px-10 text-center"
             href="tel:800 244 2245"
           >
             <Phone className="w-5 h-5 inline mr-2" />
-            800 244 2245
+            <span className="inline lg:hidden xl:inline text-nowrap">
+              800 244 2245
+            </span>
           </Button>
         </div>
 

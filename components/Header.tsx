@@ -27,7 +27,7 @@ const Header = ({ navItems }: HeaderProps) => {
           </Link>
         </div>
 
-        <div className="justify-center font-bold flex gap-12 text-lg tracking-widest text-center m-[5%] md:m-0 mb-8">
+        <div className="justify-center font-bold flex gap-12 text-lg tracking-widest text-center m-[5%] md:m-0 mb-8 lg:pl-20">
           {navItems.map((navItem) => (
             <Link
               key={navItem.label}
