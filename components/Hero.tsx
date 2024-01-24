@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 interface HeroProps {
-  title: string;
+  title: React.ReactNode;
   description: string;
   bgImage: string;
   children?: React.ReactNode;
@@ -9,8 +9,8 @@ interface HeroProps {
 
 const Hero = ({ title, description, bgImage, children }: HeroProps) => {
   return (
-    <div className="relative border-t-[3px] border-zinc-200 hero">
-      <div className="w-full h-[67vh] sm:h-[55vh] md:h-[83vh] top-0 absolute bg-gray-900/50 justify-center">
+    <div className="relative h-[67vh] sm:h-[55vh] md:h-[83vh] border-t-[3px] border-zinc-200 hero">
+      <div className="w-full h-full top-0 absolute bg-gray-900/50 justify-center flex-shrink">
         <div className="w-full flex justify-center">
           <h1 className="text-background text-center mt-28 md:mt-36 leading-snug text-5xl md:text-[95px] lg:text-[115px] font-extrabold tracking-tight max-w-5xl">
             {title}
@@ -30,7 +30,7 @@ const Hero = ({ title, description, bgImage, children }: HeroProps) => {
         alt={bgImage}
         width={1000}
         height={1000}
-        className="object-cover w-full h-[67vh] sm:h-[55vh] md:h-[83vh]"
+        className="object-cover w-full h-full"
       />
     </div>
   );

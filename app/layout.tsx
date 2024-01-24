@@ -10,7 +10,6 @@ import Footer from "@/components/Footer";
 // TODO: Create Middleware
 // TODO: Create Not found page
 // TODO: Menu Item Deatails Component
-// TODO: App should be fully responsive
 // TODO: Menu Page
 // TODO: Menu Layout
 // TODO : copy mobile app functionality

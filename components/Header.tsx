@@ -12,7 +12,6 @@ interface HeaderProps {
 
 const Header = ({ navItems }: HeaderProps) => {
   return (
-    // border-b-[3px] border-zinc-200
     <div className="bg-[#CE3737]/90 w-full py-[1px]">
       <div className="md:flex md:flex-cols-3 justify-between items-center gap-10 lg:mx-[15%] md:mx-[5%] my-5">
         <div className="flex flex-shrink-0 justify-center lg:w-fit md:block">

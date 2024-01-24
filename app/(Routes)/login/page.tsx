@@ -23,7 +23,12 @@ const page = () => {
     >
       <div className="grid gap-1 py-2">
         <Label htmlFor="mobile">Mobile</Label>
-        <Input type="tel" className="border-b border-black w-64" />
+        <div className="flex w-60 gap-1">
+          <div className="border-b border-black w-16 text-[13px] flex justify-center items-center">
+            +966
+          </div>
+          <Input type="tel" className="border-b border-black w-full" />
+        </div>
         {errors?.mobile && (
           <p className="text-sm text-red-500">{errors.mobile.message}</p>
         )}

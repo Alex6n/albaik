@@ -25,10 +25,16 @@ const VALUES = [
 ];
 
 export default function Home() {
+  const Title = (
+    <p>
+      Savor the Spice, <span className="block">Embrace the Crisp!</span>
+    </p>
+  );
+
   return (
     <main>
       <Hero
-        title="Savor the Spice, Embrace the Crisp!"
+        title={Title}
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
             beatae suscipit voluptatibus consequuntur dolore. Inventore nostrum
             tenetur asperiores consectetur"
