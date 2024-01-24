@@ -36,7 +36,7 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
             asChild
             size="lg"
             variant="secondary"
-            className="underline px-10 text-center"
+            className="hover:underline px-10 text-center"
           >
             <Link href="tel:800 244 2245">
               <Phone className="w-5 h-5 inline mr-2" />
