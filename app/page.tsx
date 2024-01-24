@@ -2,8 +2,9 @@ import Hero from "@/components/Hero";
 import Info from "@/components/Info";
 import InfoContainer from "@/components/InfoContainer";
 import Values from "@/components/Values";
-import Button from "@/components/ui/Button";
+import { Button } from "@/components/ui/button";
 import { Heart, HeartHandshake, Shield, Trophy } from "lucide-react";
+import Link from "next/link";
 
 const VALUES = [
   {
@@ -40,8 +41,8 @@ export default function Home() {
             tenetur asperiores consectetur"
         bgImage="/home_hero.jpg"
       >
-        <Button size="md" className="px-10">
-          Explore the Menu
+        <Button size="lg" className="px-10 rounded-xl" asChild>
+          <Link href="/menu">Explore the Menu</Link>
         </Button>
       </Hero>
 

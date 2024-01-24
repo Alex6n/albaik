@@ -12,7 +12,7 @@ import {
 import { Separator } from "./ui/separator";
 import Link from "next/link";
 import { ScrollArea } from "./ui/scroll-area";
-import Button from "./ui/Button";
+import { Button } from "./ui/button";
 import CartItem from "./CartItem";
 
 const items = [
@@ -62,10 +62,10 @@ const Cart = () => {
               <SheetFooter>
                 <SheetTrigger asChild>
                   <Button
-                    href="/cart"
                     className="w-full text-center border-none rounded-md"
+                    asChild
                   >
-                    Continue to Checkout
+                    <Link href="/cart">Continue to Checkout</Link>
                   </Button>
                 </SheetTrigger>
               </SheetFooter>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button from "./ui/Button";
+import { Button } from "./ui/button";
 import { Phone } from "lucide-react";
 
 interface FooterProps {
@@ -33,15 +33,17 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
         <div className="flex flex-col items-center my-4 text-background bg-zinc-950/20 p-7 border border-background/30 rounded-xl lg:ml-12">
           <h1 className="font-bold tracking-wider text-lg">Contact Us</h1>
           <Button
+            asChild
             size="lg"
-            primary={false}
+            variant="secondary"
             className="underline px-10 text-center"
-            href="tel:800 244 2245"
           >
-            <Phone className="w-5 h-5 inline mr-2" />
-            <span className="inline lg:hidden xl:inline text-nowrap">
-              800 244 2245
-            </span>
+            <Link href="tel:800 244 2245">
+              <Phone className="w-5 h-5 inline mr-2" />
+              <span className="inline lg:hidden xl:inline text-nowrap">
+                800 244 2245
+              </span>
+            </Link>
           </Button>
         </div>
 
