@@ -11,6 +11,7 @@ import {
 } from "@/lib/validators/account-credentials-validator";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
+import PhoneInput from "@/components/PhoneInput";
 
 const Page = () => {
   const {
@@ -23,9 +24,7 @@ const Page = () => {
 
   const isLoading = false;
 
-  const submitData = (data: TAuthCredentialsValidator) => {
-    console.log("hello", data);
-  };
+  const onSubmit = (data: TAuthCredentialsValidator) => console.log(data);
 
   return (
     <FormBox
@@ -38,7 +37,7 @@ const Page = () => {
           Response Error Goes Here
         </p>
       )}
-      <form className="p-5 max-w-[370px]" onSubmit={handleSubmit(submitData)}>
+      <form className="p-5 max-w-[370px]" onSubmit={handleSubmit(onSubmit)}>
         <div className="grid gap-2">
           <div className="grid gap-1 w-60 py-2">
             <Label htmlFor="firstName">First Name</Label>
@@ -70,10 +69,8 @@ const Page = () => {
 
           <div className="grid gap-1 py-2">
             <Label htmlFor="mobile">Mobile</Label>
-            <div className="flex w-60 gap-1">
-              <div className="border-b border-black w-16 text-[13px] flex justify-center items-center">
-                +966
-              </div>
+            <div className="flex w-60">
+              <PhoneInput />
               <Input
                 {...register("mobile")}
                 type="number"

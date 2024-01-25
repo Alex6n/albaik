@@ -12,9 +12,10 @@ import Footer from "@/components/Footer";
 // TODO: Menu Item Deatails Component
 // TODO: Menu Page
 // TODO: Menu Layout
-// TODO : copy mobile app functionality
+// TODO: copy mobile app functionality
 // TODO: Change Language
 // TODO: Consider anothor bg color
+// TODO: Add reset password pages
 // TODO: Refactor
 
 export const metadata: Metadata = {
