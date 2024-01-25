@@ -4,8 +4,8 @@ import Link from "next/link";
 interface FormBoxProps {
   children: React.ReactNode;
   heading: string;
-  linkTitle: string;
-  linkHref: string;
+  linkTitle?: string;
+  linkHref?: string;
 }
 
 const FormBox = ({ children, heading, linkTitle, linkHref }: FormBoxProps) => {
@@ -16,9 +16,11 @@ const FormBox = ({ children, heading, linkTitle, linkHref }: FormBoxProps) => {
         {heading}
       </h1>
       {children}
-      <Link className="inline hover:underline" href={linkHref}>
-        {linkTitle}
-      </Link>
+      {linkTitle && linkHref && (
+        <Link className="inline hover:underline" href={linkHref}>
+          {linkTitle}
+        </Link>
+      )}
     </div>
   );
 };

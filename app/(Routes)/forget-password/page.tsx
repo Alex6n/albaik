@@ -28,8 +28,8 @@ const Page = () => {
 
   return (
     <FormBox
-      heading="Create an account"
-      linkTitle="Already have an account?"
+      heading="Reset your password"
+      linkTitle="Login to your account"
       linkHref="/login"
     >
       {errors?.mobile && (
@@ -39,36 +39,9 @@ const Page = () => {
       )}
       <form className="p-5 max-w-[370px]" onSubmit={handleSubmit(onSubmit)}>
         <div className="grid gap-2">
-          <div className="grid gap-1 w-60 py-2">
-            <Label htmlFor="firstName">First Name</Label>
-            <Input
-              {...register("firstName")}
-              type="text"
-              className="border-b border-black w-full"
-            />
-            {errors?.firstName && (
-              <p className="text-sm text-red-500 max-w-60">
-                {errors.firstName.message}
-              </p>
-            )}
-          </div>
-
-          <div className="grid gap-1 w-60 py-2">
-            <Label htmlFor="lastName">Last Name</Label>
-            <Input
-              {...register("lastName")}
-              type="text"
-              className="border-b border-black w-full"
-            />
-            {errors?.lastName && (
-              <p className="text-sm text-red-500 max-w-60">
-                {errors.lastName.message}
-              </p>
-            )}
-          </div>
-
           <div className="grid gap-1 py-2">
             <Label htmlFor="mobile">Mobile</Label>
+
             <div className="flex w-60">
               <PhoneInput />
               <Input
@@ -84,39 +57,11 @@ const Page = () => {
             )}
           </div>
 
-          <div className="grid gap-1 w-60 py-2">
-            <Label htmlFor="email">Email Address</Label>
-            <Input
-              {...register("email")}
-              type="email"
-              className="border-b border-black w-full"
-            />
-            {errors?.email && (
-              <p className="text-sm text-red-500 max-w-60">
-                {errors.email.message}
-              </p>
-            )}
-          </div>
-
-          <div className="grid gap-1 w-60 py-2">
-            <Label htmlFor="password">Password</Label>
-            <Input
-              {...register("password")}
-              type="password"
-              className="border-b border-black w-full"
-            />
-            {errors?.password && (
-              <p className="text-sm text-red-500 max-w-60">
-                {errors.password.message}
-              </p>
-            )}
-          </div>
-
           <Button
             type="submit"
             className="rounded-lg border-none mt-1 text-center w-full "
           >
-            Sign up
+            Send link
           </Button>
         </div>
       </form>

@@ -3,12 +3,9 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// TODO: Create request reset password page
 // TODO: Create reset password page
 
 // TODO: Create code auth component
-
-// TODO: Create Not found page
 
 // TODO: Create Orders Page
 // TODO: Create Checkout Page
