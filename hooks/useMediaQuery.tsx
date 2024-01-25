@@ -7,10 +7,10 @@ function useMediaQuery(query: string) {
     const mediaQuery = window.matchMedia(query);
     const listener = () => setMatches(mediaQuery.matches);
 
-    mediaQuery.addListener(listener);
+    mediaQuery.addEventListener("change", listener);
     listener();
 
-    return () => mediaQuery.removeListener(listener);
+    return () => mediaQuery.removeEventListener("change", listener);
   }, [query]);
 
   return matches;

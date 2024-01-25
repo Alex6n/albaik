@@ -19,7 +19,7 @@ const PhoneInput = () => {
           <Image src={`/${country}.png`} alt={country} height={15} width={25} />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent>
+      <DropdownMenuContent className="bg-zinc-300">
         <DropdownMenuItem
           onClick={() => setCountry("sa")}
           className="hover:bg-primary/70 rounded-md hover:cursor-pointer"

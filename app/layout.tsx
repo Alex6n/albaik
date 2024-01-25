@@ -3,19 +3,26 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// TODO: Finish Login and signup pages
-// TODO: Finish Cart Logic
-// TODO: Create Checkout Page
-// TODO: Create Orders Page
-// TODO: Create Middleware
+// TODO: Create request reset password page
+// TODO: Create reset password page
+
+// TODO: Create code auth component
+
 // TODO: Create Not found page
-// TODO: Menu Item Deatails Component
+
+// TODO: Create Orders Page
+// TODO: Create Checkout Page
+
 // TODO: Menu Page
 // TODO: Menu Layout
-// TODO: copy mobile app functionality
+// TODO: Menu Item Deatails Component
+
+// TODO: Finish Cart Logic
+
+// TODO: Share form states
+
 // TODO: Change Language
-// TODO: Consider anothor bg color
-// TODO: Add reset password pages
+
 // TODO: Refactor
 
 export const metadata: Metadata = {
