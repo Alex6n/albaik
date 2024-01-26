@@ -1,6 +1,17 @@
+import Catogeries from "@/components/Catogeries";
 import { ImageSlider } from "@/components/ImageSlider";
 
 const images = ["/offer1.jpg", "/offer2.jpg"];
+const categories = [
+  "All",
+  "Breakfast",
+  "Chicken",
+  "Seafood",
+  "Vegetarian",
+  "Sides",
+  "Desserts",
+  "Beverages",
+];
 
 const page = () => {
   return (
@@ -9,8 +20,9 @@ const page = () => {
         Menu
       </div>
       <div className="my-4 flex justify-center">
-        <div className="max-h-[650px] max-w-[1035px]">
+        <div className="max-w-[1035px]">
           <ImageSlider images={images} />
+          <Catogeries catogeries={categories} />
         </div>
       </div>
     </section>
