@@ -1,5 +1,6 @@
 "use client";
 
+import { redirect } from "next/navigation";
 import FormBox from "@/components/FormBox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -24,7 +25,10 @@ const Page = () => {
 
   const isLoading = false;
 
-  const onSubmit = (data: TAuthCredentialsValidator) => console.log(data);
+  const onSubmit = (data: TAuthCredentialsValidator) => {
+    console.log(data);
+    redirect("/reset-password");
+  };
 
   return (
     <FormBox
@@ -37,7 +41,11 @@ const Page = () => {
           Response Error Goes Here
         </p>
       )}
-      <form className="p-5 max-w-[370px]" onSubmit={handleSubmit(onSubmit)}>
+      <form
+        className="p-5 max-w-[370px]"
+        onSubmit={handleSubmit(onSubmit)}
+        action="/reset-password"
+      >
         <div className="grid gap-2">
           <div className="grid gap-1 py-2">
             <Label htmlFor="mobile">Mobile</Label>

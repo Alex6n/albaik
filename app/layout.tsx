@@ -3,10 +3,6 @@ import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-// TODO: Create reset password page
-
-// TODO: Create code auth component
-
 // TODO: Create Orders Page
 // TODO: Create Checkout Page
 
@@ -16,7 +12,11 @@ import Footer from "@/components/Footer";
 
 // TODO: Finish Cart Logic
 
+// TODO: Profile Page
+
 // TODO: Share form states
+
+// TODO: Demo Options prompt to browse all pages without backend
 
 // TODO: Change Language
 
