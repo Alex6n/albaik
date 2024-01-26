@@ -20,7 +20,7 @@ const items = [
     id: "123",
     name: "item",
     label: "chicken",
-    images: ["/home_hero.jpg"],
+    images: ["/landing/home_hero.jpg"],
     price: 100,
   },
 ];
