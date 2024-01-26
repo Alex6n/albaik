@@ -1,18 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
+import Header from "@/components/Layout/Header";
+import Footer from "@/components/Layout/Footer";
+
+// TODO: Menu Items data
+// TODO: Menu Layout
+// TODO: Menu Item Deatails Component
 
 // TODO: Create Orders Page
 // TODO: Create Checkout Page
 
-// TODO: Menu Page
-// TODO: Menu Layout
-// TODO: Menu Item Deatails Component
-
 // TODO: Finish Cart Logic
 
 // TODO: Profile Page
+
+// TODO: Tracking Order
 
 // TODO: Share form states
 
@@ -20,7 +22,7 @@ import Footer from "@/components/Footer";
 
 // TODO: Change Language
 
-// TODO: Refactor
+// TODO: Simulate Backend
 
 export const metadata: Metadata = {
   title: "ALBAIK | البيك",

@@ -1,6 +1,6 @@
 "use client";
 
-import FormBox from "@/components/FormBox";
+import FormBox from "@/components/Routes/FormBox";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
@@ -12,7 +12,7 @@ import {
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import Link from "next/link";
-import PhoneInput from "@/components/PhoneInput";
+import PhoneInput from "@/components/Routes/PhoneInput";
 
 const Page = () => {
   const {

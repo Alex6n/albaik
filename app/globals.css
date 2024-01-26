@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "Rubik-Medium";
-  src: url("../public/Rubik-Medium.ttf") format("truetype");
+  src: url("../public/fonts/Rubik-Medium.ttf") format("truetype");
 }
 
 html {
@@ -16,7 +16,7 @@ html {
 }
 
 .bg-hats {
-  background-image: url("../public/hats_bg.svg");
+  background-image: url("../public/utils/hats_bg.svg");
   background-position: center;
 }
 

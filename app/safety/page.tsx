@@ -1,4 +1,4 @@
-import DataCard from "@/components/DataCard";
+import DataCard from "@/components/Landing/DataCard";
 
 const page = () => {
   return (

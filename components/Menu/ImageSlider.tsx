@@ -31,7 +31,7 @@ export function ImageSlider({ images }: { images: string[] }) {
               alt={image}
               height={650}
               width={1035}
-              className="object-cover w-full h-full md:rounded-3xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer"
+              className="object-cover w-full h-full lg:rounded-xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer"
             />
           </CarouselItem>
         ))}

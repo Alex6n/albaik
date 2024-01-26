@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import UserMenu from "./UserMenu";
-import Cart from "./Cart";
+import Cart from "../Cart/Cart";
 
 interface HeaderProps {
   navItems: {

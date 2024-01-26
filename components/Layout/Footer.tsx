@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Button } from "./ui/button";
+import { Button } from "../ui/button";
 import { Phone } from "lucide-react";
 
 interface FooterProps {
@@ -19,10 +19,15 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
     <div className="bg-[#CE3737]/90 w-full flex flex-col py-4 relative bottom-0">
       <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
         <div className="flex justify-center my-4">
-          <Image src="/kookoo_logo.svg" alt="logo" width={73} height={82} />
+          <Image
+            src="/utils/kookoo_logo.svg"
+            alt="logo"
+            width={73}
+            height={82}
+          />
           <div className="flex items-center min-h-full mx-5 flex-shrink-0 ">
             <Image
-              src="/saudi_made_logo.svg"
+              src="/utils/saudi_made_logo.svg"
               alt="logo"
               width={165}
               height={56}

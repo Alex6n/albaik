@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Button } from "./ui/button";
-import { cn } from "@/lib/utils";
+import { Button } from "../ui/button";
 
 const Catogeries = ({ catogeries }: { catogeries: string[] }) => {
   const [selected, setSelected] = useState("all");

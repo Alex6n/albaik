@@ -1,7 +1,8 @@
-import Catogeries from "@/components/Catogeries";
-import { ImageSlider } from "@/components/ImageSlider";
+import Catogeries from "@/components/Menu/Catogeries";
+import { ImageSlider } from "@/components/Menu/ImageSlider";
 
-const images = ["/offer1.jpg", "/offer2.jpg"];
+const images = ["/offers/offer1.jpg", "/offers/offer2.jpg"];
+
 const categories = [
   "All",
   "Breakfast",

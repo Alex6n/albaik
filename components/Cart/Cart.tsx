@@ -8,11 +8,11 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
-} from "./ui/sheet";
-import { Separator } from "./ui/separator";
+} from "../ui/sheet";
+import { Separator } from "../ui/separator";
 import Link from "next/link";
-import { ScrollArea } from "./ui/scroll-area";
-import { Button } from "./ui/button";
+import { ScrollArea } from "../ui/scroll-area";
+import { Button } from "../ui/button";
 import CartItem from "./CartItem";
 
 const items = [
