@@ -18,20 +18,47 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
   return (
     <div className="bg-[#CE3737]/90 w-full flex flex-col py-4 relative bottom-0">
       <div className="lg:flex justify-between items-center gap-10 mx-[15%] my-5">
-        <div className="flex justify-center my-4">
-          <Image
-            src="/utils/kookoo_logo.svg"
-            alt="logo"
-            width={73}
-            height={82}
-          />
-          <div className="flex items-center min-h-full mx-5 flex-shrink-0 ">
+        <div className="grid">
+          <div className="flex justify-center my-4">
             <Image
-              src="/utils/saudi_made_logo.svg"
+              src="/utils/kookoo_logo.svg"
               alt="logo"
-              width={165}
-              height={56}
+              width={73}
+              height={82}
             />
+            <div className="flex items-center min-h-full mx-5 flex-shrink-0 ">
+              <Image
+                src="/utils/saudi_made_logo.svg"
+                alt="logo"
+                width={165}
+                height={56}
+              />
+            </div>
+          </div>
+          <div className="flex gap-1 justify-center">
+            <Link
+              href="https://apps.apple.com/sa/app/albaik/id1514349620"
+              target="_blank"
+            >
+              <Image
+                src="/utils/Appstore.png"
+                alt="logo"
+                width={161}
+                height={53}
+              />
+            </Link>
+
+            <Link
+              href="https://play.google.com/store/apps/details?id=com.albaik.customer&hl=ar&pli=1"
+              target="_blank"
+            >
+              <Image
+                src="/utils/Googleplay.png"
+                alt="logo"
+                width={161}
+                height={53}
+              />
+            </Link>
           </div>
         </div>
 
