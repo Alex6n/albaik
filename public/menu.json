@@ -1,0 +1,38 @@
+{
+    "Breakfast": [
+        {
+            "title": "",
+            "description": "",
+            "price": {
+                "sar": 0,
+                "bah": 0
+            },
+            "images": [
+                ""
+            ],
+            "allergens": [
+                ""
+            ],
+            "calories": {
+                "total": 0,
+                "pieces": [
+                    {
+                        "name": "",
+                        "amount": 0
+                    }
+                ],
+                "children": ""
+            },
+            "variants": [
+                ""
+            ],
+            "stock": 0
+        }
+    ],
+    "Chicken": [],
+    "Seafood": [],
+    "Vegetarian": [],
+    "Sides": [],
+    "Desserts": [],
+    "Beverages": []
+}
