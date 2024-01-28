@@ -6,6 +6,8 @@ import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import { ImageSlider } from "./ImageSlider";
 import { Button } from "../ui/button";
 import MenuItem from "./MenuItem";
+import MenuItemDetails from "./MenuItemDetails";
+import { Separator } from "../ui/separator";
 
 interface MenuListProps {
   items: {
@@ -60,15 +62,7 @@ const MenuList = ({ items }: MenuListProps) => {
           <DialogTrigger>test</DialogTrigger>
           <DialogContent>
             <div className="flex justify-between gap-3">
-              <div className="opacity-0 hidden">
-                <MenuItem
-                  images={images}
-                  title="BAIKEEZ-Chicken Breasts"
-                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
-        voluptas, necessitatibus ex perferendis."
-                />
-              </div>
-
+              <MenuItemDetails className="md:block hidden border-r border-black/5" />
               <MenuItem
                 images={images}
                 title="BAIKEEZ-Chicken Breasts"

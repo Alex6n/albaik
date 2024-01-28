@@ -7,13 +7,14 @@ interface MenuItemProps {
   images: string[];
   title: string;
   description: string;
+  className?: string;
 }
 
-const MenuItem = ({ images, title, description }: MenuItemProps) => {
+const MenuItem = ({ images, title, description, className }: MenuItemProps) => {
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <div className="w-[360px] text-red-950">
+    <div className={`w-[360px] text-red-950 ${className}`}>
       <ImageSlider images={images} play={false} />
       <h1 className="text-xl font-bold my-2 mx-1">{title}</h1>
       <p className="w-full leading-5 mx-1">{description}</p>
@@ -26,13 +27,13 @@ const MenuItem = ({ images, title, description }: MenuItemProps) => {
             size="sm"
             className="my-0 w-9 rounded-[4px] border-none hover:translate-y-0 bg-zinc-200 hover:shadow-none transition-none"
           >
-            -
+            –
           </Button>
           {quantity}
           <Button
             onClick={() => setQuantity(quantity + 1)}
             size="sm"
-            className="my-0 w-9 rounded-[4px] border-none hover:translate-y-0 hover:shadow-none transition-none"
+            className="my-0 w-9 rounded-[4px] border-none hover:translate-y-0 hover:shadow-none transition-none bg-primary/80"
           >
             +
           </Button>
