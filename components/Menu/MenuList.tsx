@@ -2,6 +2,10 @@ import { cn } from "@/lib/utils";
 import { TimerIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
+import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
+import { ImageSlider } from "./ImageSlider";
+import { Button } from "../ui/button";
+import MenuItem from "./MenuItem";
 
 interface MenuListProps {
   items: {
@@ -11,6 +15,7 @@ interface MenuListProps {
     available: boolean;
   }[];
 }
+const images = ["/landing/home_hero.jpg", "/landing/home_hero.jpg"];
 
 const MenuList = ({ items }: MenuListProps) => {
   return (
@@ -48,6 +53,23 @@ const MenuList = ({ items }: MenuListProps) => {
           </div>
         </div>
       ))}
+
+      {
+        // To be deleted : ONLY FOR TESTING
+        <Dialog>
+          <DialogTrigger>test</DialogTrigger>
+          <DialogContent>
+            <div className="w-[360px] text-red-950">
+              <MenuItem
+                images={images}
+                title="BAIKEEZ-Chicken Breasts"
+                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
+        voluptas, necessitatibus ex perferendis."
+              />
+            </div>
+          </DialogContent>
+        </Dialog>
+      }
     </div>
   );
 };

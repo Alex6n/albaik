@@ -12,14 +12,20 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 
-export function ImageSlider({ images }: { images: string[] }) {
+export function ImageSlider({
+  images,
+  play,
+}: {
+  images: string[];
+  play?: boolean;
+}) {
   const plugin = React.useRef(
     Autoplay({ delay: 4000, stopOnInteraction: true })
   );
 
   return (
     <Carousel
-      plugins={[plugin.current]}
+      plugins={play === false ? [] : [plugin.current]}
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
     >
@@ -31,7 +37,7 @@ export function ImageSlider({ images }: { images: string[] }) {
               alt={image}
               height={650}
               width={1035}
-              className="object-cover w-full h-full lg:rounded-xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer"
+              className="object-cover w-full h-full lg:rounded-xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer rounded-lg"
             />
           </CarouselItem>
         ))}
