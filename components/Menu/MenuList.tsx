@@ -1,14 +1,12 @@
 import { cn } from "@/lib/utils";
 import { TimerIcon } from "lucide-react";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 
 interface MenuListProps {
   items: {
     image: string;
     title: string;
-    link: string;
     highlighted: boolean;
     available: boolean;
   }[];
@@ -16,17 +14,19 @@ interface MenuListProps {
 
 const MenuList = ({ items }: MenuListProps) => {
   return (
-    <div className="w-full grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:justify-center gap-2">
+    <div className="w-full grid sm:grid-cols-2 md:grid-cols-4 sm:justify-center gap-2">
       {items.map((item) => (
-        <Link
+        <div
           key={item.title}
-          href={item.link}
-          className={cn("h-[200px] relative rounded-lg overflow-hidden", {
-            "col-span-2": item.highlighted,
-          })}
+          className={cn(
+            "h-[200px] relative rounded-lg overflow-hidden hover:cursor-pointer",
+            {
+              "col-span-2": item.highlighted,
+            }
+          )}
         >
           {item.available || (
-            <div className="absolute z-10 text-xs text-red-800 bg-gray-100/80 rounded-xl px-2 py-1 m-2 hover:opacity-100">
+            <div className="absolute z-10 text-xs text-red-800 bg-white/80 rounded-xl px-2 py-1 m-2 hover:opacity-100">
               <TimerIcon className="inline w-3 h-3 mr-1" />
               Unavaliable
             </div>
@@ -46,7 +46,7 @@ const MenuList = ({ items }: MenuListProps) => {
               className="object-cover -z-10"
             />
           </div>
-        </Link>
+        </div>
       ))}
     </div>
   );

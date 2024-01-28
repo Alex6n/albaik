@@ -21,16 +21,26 @@ const page = () => {
     {
       image: "/landing/home_hero.jpg",
       title: "delecious chicken baby",
-      link: "/item1",
       highlighted: false,
       available: true,
     },
     {
       image: "/landing/home_hero.jpg",
-      title: "delecious chicken baby1",
-      link: "/item1",
+      title: "OK chicken meal",
       highlighted: false,
       available: false,
+    },
+    {
+      image: "/landing/home_hero.jpg",
+      title: "special chicken baby",
+      highlighted: true,
+      available: true,
+    },
+    {
+      image: "/landing/home_hero.jpg",
+      title: "just anothor line",
+      highlighted: false,
+      available: true,
     },
   ];
   return (
@@ -38,8 +48,8 @@ const page = () => {
       <div className="bg-[#CE3737]/90 py-5 text-background font-bold text-center text-7xl">
         Menu
       </div>
-      <div className="my-4 flex justify-center">
-        <div className="max-w-[1035px]">
+      <div className="my-3 flex justify-center">
+        <div className="max-w-[1035px] mb-5">
           <ImageSlider images={images} />
           <Catogeries catogeries={categories} />
           <MenuList items={items} />
