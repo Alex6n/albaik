@@ -59,7 +59,16 @@ const MenuList = ({ items }: MenuListProps) => {
         <Dialog>
           <DialogTrigger>test</DialogTrigger>
           <DialogContent>
-            <div className="w-[360px] text-red-950">
+            <div className="flex justify-between gap-3">
+              <div className="opacity-0 hidden">
+                <MenuItem
+                  images={images}
+                  title="BAIKEEZ-Chicken Breasts"
+                  description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
+        voluptas, necessitatibus ex perferendis."
+                />
+              </div>
+
               <MenuItem
                 images={images}
                 title="BAIKEEZ-Chicken Breasts"
