@@ -3,8 +3,6 @@
 import * as React from "react";
 import Autoplay from "embla-carousel-autoplay";
 
-// TODO: add link to product page
-
 import {
   Carousel,
   CarouselContent,

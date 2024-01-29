@@ -3,14 +3,19 @@ import React, { useState } from "react";
 import { ImageSlider } from "./ImageSlider";
 import { Button } from "../ui/button";
 
-interface MenuItemProps {
+interface MenuItemActionsProps {
   images: string[];
   title: string;
   description: string;
   className?: string;
 }
 
-const MenuItem = ({ images, title, description, className }: MenuItemProps) => {
+const MenuItemActions = ({
+  images,
+  title,
+  description,
+  className,
+}: MenuItemActionsProps) => {
   const [quantity, setQuantity] = useState(1);
 
   return (
@@ -46,4 +51,4 @@ const MenuItem = ({ images, title, description, className }: MenuItemProps) => {
   );
 };
 
-export default MenuItem;
+export default MenuItemActions;

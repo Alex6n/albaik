@@ -12,7 +12,9 @@ const Catogeries = ({ catogeries }: { catogeries: string[] }) => {
           key={catogery}
           variant="ghost"
           className={`${
-            selected === catogery ? "bg-red-500/20 text-rose-500" : ""
+            selected === catogery
+              ? "bg-red-500/20 text-rose-500 duration-500"
+              : ""
           } m-0 rounded-md`}
         >
           {catogery}

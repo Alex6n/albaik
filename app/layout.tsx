@@ -3,20 +3,19 @@ import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
-// TODO: Simulate menu items
-// TODO: Menu Item Deatails Component dialog
+// TODO: Finish Menu Items Details Component
+// TODO: Menu Item Container Component
+// TODO: Complete Menu Page and Simulate items
 
 // TODO: Create Orders Page
+// TODO: Create Order Details Component
 // TODO: Create Checkout Page
 
-// TODO: Finish Cart Logic
-// TODO: Profile Page
-
 // TODO: Tracking Order
-// TODO: Shared states
+// TODO: Profile Page
+// TODO: Finish Cart Logic and Shared states
 
 // TODO: Demo Options prompt to browse all pages without backend
-
 // TODO: Change Language
 
 // TODO: Simulate Backend

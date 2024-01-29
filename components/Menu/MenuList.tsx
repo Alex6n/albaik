@@ -3,11 +3,8 @@ import { TimerIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
-import { ImageSlider } from "./ImageSlider";
-import { Button } from "../ui/button";
-import MenuItem from "./MenuItem";
 import MenuItemDetails from "./MenuItemDetails";
-import { Separator } from "../ui/separator";
+import MenuItemActions from "./MenuItemActions";
 
 interface MenuListProps {
   items: {
@@ -63,7 +60,7 @@ const MenuList = ({ items }: MenuListProps) => {
           <DialogContent>
             <div className="flex justify-between gap-3">
               <MenuItemDetails className="md:block hidden border-r border-black/5" />
-              <MenuItem
+              <MenuItemActions
                 images={images}
                 title="BAIKEEZ-Chicken Breasts"
                 description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
