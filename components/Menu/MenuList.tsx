@@ -2,9 +2,7 @@ import { cn } from "@/lib/utils";
 import { TimerIcon } from "lucide-react";
 import Image from "next/image";
 import React from "react";
-import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
-import MenuItemDetails from "./MenuItemDetails";
-import MenuItemActions from "./MenuItemActions";
+import MenuItem from "./MenuItem";
 
 interface MenuListProps {
   items: {
@@ -14,13 +12,12 @@ interface MenuListProps {
     available: boolean;
   }[];
 }
-const images = ["/landing/home_hero.jpg", "/landing/home_hero.jpg"];
 
 const MenuList = ({ items }: MenuListProps) => {
   return (
     <div className="w-full grid sm:grid-cols-2 md:grid-cols-4 sm:justify-center gap-2">
       {items.map((item) => (
-        <div
+        <MenuItem
           key={item.title}
           className={cn(
             "h-[200px] relative rounded-lg overflow-hidden hover:cursor-pointer",
@@ -50,26 +47,8 @@ const MenuList = ({ items }: MenuListProps) => {
               className="object-cover -z-10"
             />
           </div>
-        </div>
+        </MenuItem>
       ))}
-
-      {
-        // To be deleted : ONLY FOR TESTING
-        <Dialog>
-          <DialogTrigger>test</DialogTrigger>
-          <DialogContent>
-            <div className="flex justify-between gap-3">
-              <MenuItemDetails className="md:block hidden border-r border-black/5" />
-              <MenuItemActions
-                images={images}
-                title="BAIKEEZ-Chicken Breasts"
-                description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit
-        voluptas, necessitatibus ex perferendis."
-              />
-            </div>
-          </DialogContent>
-        </Dialog>
-      }
     </div>
   );
 };
