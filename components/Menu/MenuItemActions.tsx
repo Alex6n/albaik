@@ -4,18 +4,17 @@ import { ImageSlider } from "./ImageSlider";
 import { Button } from "../ui/button";
 
 interface MenuItemActionsProps {
-  images: string[];
-  title: string;
-  description: string;
   className?: string;
+  details: {
+    images: string[];
+    title: string;
+    description: string;
+  };
 }
 
-const MenuItemActions = ({
-  images,
-  title,
-  description,
-  className,
-}: MenuItemActionsProps) => {
+const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
+  const { images, title, description } = details;
+
   const [quantity, setQuantity] = useState(1);
 
   return (

@@ -9,6 +9,7 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import MenuItem from "./MenuItem";
 
 export function ImageSlider({
   images,
@@ -30,13 +31,15 @@ export function ImageSlider({
       <CarouselContent>
         {images.map((image) => (
           <CarouselItem key={image}>
-            <Image
-              src={image}
-              alt={image}
-              height={650}
-              width={1035}
-              className="object-cover w-full h-full lg:rounded-xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer rounded-lg"
-            />
+            <MenuItem>
+              <Image
+                src={image}
+                alt={image}
+                height={650}
+                width={1035}
+                className="object-cover w-full h-full lg:rounded-xl lg:max-h-[650px] lg:max-w-[1035px] cursor-pointer rounded-lg"
+              />
+            </MenuItem>
           </CarouselItem>
         ))}
       </CarouselContent>

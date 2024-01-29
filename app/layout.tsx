@@ -3,9 +3,7 @@ import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
-// TODO: Finish Menu Items Details Component
-// TODO: Menu Item Container Component
-// TODO: Complete Menu Page and Simulate items
+// TODO: Refactor and Mock a menu details
 
 // TODO: Create Orders Page
 // TODO: Create Order Details Component
