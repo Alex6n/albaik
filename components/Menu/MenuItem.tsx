@@ -9,6 +9,10 @@ export interface MenuItemType {
   images: string[];
   allergens: string[];
   totalCalories: number;
+  price: {
+    sar: number;
+    bah: number;
+  };
   itemParts: {
     name: string;
     calories: number;

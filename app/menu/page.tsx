@@ -23,8 +23,21 @@ const items = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit voluptas, necessitatibus ex perferendis.",
     images: ["/landing/home_hero.jpg", "/landing/home_hero.jpg"],
-    category: "Breakfast",
-    allergens: ["Egg", "Soybeans", "Milk", "Gluten"],
+    price: {
+      sar: 0,
+      bah: 0,
+    },
+    instock: 0,
+    allergens: [
+      "Mustard",
+      "Sesame",
+      "Crustaceans",
+      "Fish",
+      "Gluten",
+      "Milk",
+      "Soybeans",
+      "Egg",
+    ],
     totalCalories: 10212,
     itemParts: [
       {
@@ -48,6 +61,10 @@ const items = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit voluptas, necessitatibus ex perferendis.",
     images: ["/landing/home_hero.jpg", "/landing/home_hero.jpg"],
+    price: {
+      sar: 50,
+      bah: 30,
+    },
     allergens: ["Egg", "Soybeans"],
     totalCalories: 477,
     itemParts: [
@@ -64,6 +81,10 @@ const items = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit voluptas, necessitatibus ex perferendis.",
     images: ["/landing/home_hero.jpg"],
+    price: {
+      sar: 200,
+      bah: 130,
+    },
     allergens: ["Egg"],
     totalCalories: 100,
     itemParts: [],

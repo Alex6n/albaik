@@ -2,15 +2,14 @@
 import React, { useState } from "react";
 import { ImageSlider } from "./ImageSlider";
 import { Button } from "../ui/button";
+import { MenuItemType } from "./MenuItem";
 
 interface MenuItemActionsProps {
   className?: string;
-  details: {
-    images: string[];
-    title: string;
-    description: string;
-  };
+  details: MenuItemType;
 }
+
+// TODO : Add price
 
 const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
   const { images, title, description } = details;

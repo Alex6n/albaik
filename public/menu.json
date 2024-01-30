@@ -1,32 +1,39 @@
 {
     "Breakfast": [
         {
-            "title": "",
+            "id": "fa08587f-95bd-44c1-916a-537dded82647",
+            "title": "Egg Sandwich with Chicken and Cheese",
             "description": "",
+            "images": [
+                ""
+            ],
             "price": {
                 "sar": 0,
                 "bah": 0
             },
-            "images": [
-                ""
-            ],
+            "instock": 0,
             "allergens": [
-                ""
+                "Egg",
+                "Soybeans",
+                "Milk",
+                "Gluten"
             ],
-            "calories": {
-                "total": 0,
-                "pieces": [
-                    {
-                        "name": "",
-                        "amount": 0
-                    }
-                ],
-                "children": ""
-            },
-            "variants": [
-                ""
+            "totalCalories": 10212,
+            "itemParts": [
+                {
+                    "name": "item one",
+                    "calories": 200
+                },
+                {
+                    "name": "item two",
+                    "calories": 400
+                },
+                {
+                    "name": "item three",
+                    "calories": 290
+                }
             ],
-            "stock": 0
+            "highlighted": false
         }
     ],
     "Chicken": [],

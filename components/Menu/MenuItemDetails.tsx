@@ -1,34 +1,49 @@
 "use client";
-import { BeanIcon, Egg, Info, LucideIcon, Milk, Wheat } from "lucide-react";
+
 import { Tooltip } from "@mui/material";
 import { ScrollArea } from "../ui/scroll-area";
+import { useState } from "react";
+
+import { FaShrimp } from "react-icons/fa6";
+import { GiSesame } from "react-icons/gi";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPepperHot } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { IconType } from "react-icons/lib";
+import { GiKetchup } from "react-icons/gi";
+import {
+  BeanIcon,
+  Egg,
+  Fish,
+  Info,
+  LucideIcon,
+  Milk,
+  Wheat,
+} from "lucide-react";
+import { MenuItemType } from "./MenuItem";
 
 interface MenuItemDetailsProps {
   className?: string;
-  details: {
-    allergens: string[];
-    totalCalories: number;
-    itemParts: {
-      name: string;
-      calories: number;
-    }[];
-  };
+  details: MenuItemType;
 }
 
 const allergenItems: {
-  [key: string]: LucideIcon;
+  [key: string]: LucideIcon | IconType;
 } = {
   Egg: Egg,
   Soybeans: BeanIcon,
   Milk: Milk,
   Gluten: Wheat,
+  Fish: Fish,
+  Crustaceans: FaShrimp,
+  Sesame: GiSesame,
+  Mustard: GiKetchup,
 };
 
 const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
   const { allergens, totalCalories, itemParts } = details;
+  const {
+    price: { sar },
+  } = details;
 
   const [spicy, setSpicy] = useState(false);
 
@@ -88,16 +103,20 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
         per day, and individual calorie needs vary from person to person.
       </div>
 
-      <div className="flex justify-center items-center text-xs font-bold cursor-default my-6">
-        <div
-          onClick={() => setSpicy(!spicy)}
-          className={`p-2 rounded-full hover:cursor-pointer bg-zinc-400/10 transition-colors ${
-            spicy ? "bg-zinc-400/50" : ""
-          }`}
-        >
-          <FontAwesomeIcon className="w-4 h-4" icon={faPepperHot} />
+      <div className="flex justify-between items-center text-xs font-bold cursor-default my-6 mx-7">
+        <div className="flex items-center">
+          <div
+            onClick={() => setSpicy(!spicy)}
+            className={`p-2 rounded-full hover:cursor-pointer bg-zinc-400/10 transition-colors ${
+              spicy ? "bg-zinc-400/50" : ""
+            }`}
+          >
+            <FontAwesomeIcon className="w-4 h-4" icon={faPepperHot} />
+          </div>
+          <span className="mx-2">Spicy</span>
         </div>
-        <span className="mx-2">Spicy</span>
+
+        <div className="text-sm text-secondary">SR {sar}</div>
       </div>
     </div>
   );
