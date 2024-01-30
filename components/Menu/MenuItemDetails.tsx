@@ -58,13 +58,15 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
             </Tooltip>
           </p>
 
-          <div className="flex items-center justify-between gap-1 rounded-3xl bg-zinc-200/60 px-3 py-[5px] opacity-75">
+          <div className="flex items-center justify-between gap-1 rounded-3xl bg-zinc-200/60 px-[6px] py-[1px] opacity-75">
             {allergens.map((allergen) => {
               const AllergenIcon = allergenItems[allergen];
               return (
                 <Tooltip title={allergen} key={allergen}>
                   {AllergenIcon && (
-                    <AllergenIcon className="w-4 h-4 inline cursor-pointer" />
+                    <div className="h-fit w-fit">
+                      <AllergenIcon className="w-4 h-4 inline cursor-pointer" />
+                    </div>
                   )}
                 </Tooltip>
               );
@@ -113,7 +115,7 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
           >
             <FontAwesomeIcon className="w-4 h-4" icon={faPepperHot} />
           </div>
-          <span className="mx-2">Spicy</span>
+          <span className="mx-2">Spicy ?</span>
         </div>
 
         <div className="text-sm text-secondary">SR {sar}</div>
