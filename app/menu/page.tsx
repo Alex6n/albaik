@@ -1,7 +1,6 @@
 import Catogeries from "@/components/Menu/Catogeries";
 import { ImageSlider } from "@/components/Menu/ImageSlider";
 import MenuList from "@/components/Menu/MenuList";
-import * as menu from "../../public/menu.json";
 
 const images = ["/offers/offer1.jpg", "/offers/offer2.jpg"];
 
@@ -28,6 +27,7 @@ const items = [
       bah: 0,
     },
     instock: 0,
+    categories: [],
     allergens: [
       "Mustard",
       "Sesame",
@@ -56,44 +56,9 @@ const items = [
     highlighted: false,
     available: true,
   },
-  {
-    title: "BAIKEEZ-Chicken Thighs",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit voluptas, necessitatibus ex perferendis.",
-    images: ["/landing/home_hero.jpg", "/landing/home_hero.jpg"],
-    price: {
-      sar: 50,
-      bah: 30,
-    },
-    allergens: ["Egg", "Soybeans"],
-    totalCalories: 477,
-    itemParts: [
-      {
-        name: "item one",
-        calories: 200,
-      },
-    ],
-    highlighted: false,
-    available: false,
-  },
-  {
-    title: "pepsi",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam velit voluptas, necessitatibus ex perferendis.",
-    images: ["/landing/home_hero.jpg"],
-    price: {
-      sar: 200,
-      bah: 130,
-    },
-    allergens: ["Egg"],
-    totalCalories: 100,
-    itemParts: [],
-    highlighted: true,
-    available: true,
-  },
 ];
 
-const page = () => {
+const page = async () => {
   return (
     <section>
       <div className="bg-[#CE3737]/90 py-5 text-background font-bold text-center text-7xl">

@@ -1,45 +1,1607 @@
 {
-    "Breakfast": [
+    "menu": [
         {
-            "id": "fa08587f-95bd-44c1-916a-537dded82647",
-            "title": "Egg Sandwich with Chicken and Cheese",
-            "description": "",
+            "id": "6b1e556f-3c12-4c16-bf22-8252e16862e7",
+            "title": "Egg Sandwich with Cheese",
+            "description": "Delicious egg sandwich with melted cheese.",
             "images": [
-                ""
+                "/menu/egg-cheese-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Breakfast"
             ],
             "price": {
-                "sar": 0,
-                "bah": 0
+                "sar": 15.99,
+                "bah": 3.99
             },
-            "instock": 0,
+            "instock": 20,
             "allergens": [
+                "Sesame",
+                "Gluten",
                 "Egg",
-                "Soybeans",
-                "Milk",
-                "Gluten"
+                "Milk"
             ],
-            "totalCalories": 10212,
+            "totalCalories": 350,
             "itemParts": [
                 {
-                    "name": "item one",
+                    "name": "1 egg",
+                    "calories": 70
+                },
+                {
+                    "name": "1 cheese slice",
+                    "calories": 80
+                },
+                {
+                    "name": "1 bread bun",
                     "calories": 200
-                },
-                {
-                    "name": "item two",
-                    "calories": 400
-                },
-                {
-                    "name": "item three",
-                    "calories": 290
                 }
             ],
             "highlighted": false
+        },
+        {
+            "id": "ba91a46e-8ef2-4bc9-bd4b-4b258dc79e0a",
+            "title": "BAIKEEZ-Chicken Breasts",
+            "description": "Tender and juicy chicken breasts from BAIKEEZ.",
+            "images": [
+                "/menu/baikeez-chicken-breasts-2x2.jpg"
+            ],
+            "categories": [
+                "Chicken",
+                "x"
+            ],
+            "price": {
+                "sar": 21.99,
+                "bah": 5.49
+            },
+            "instock": 18,
+            "allergens": [],
+            "totalCalories": 280,
+            "itemParts": [
+                {
+                    "name": "2 chicken breasts",
+                    "calories": 180
+                },
+                {
+                    "name": "1 side of coleslaw",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "06e9eac0-1444-4a1b-9f9b-482c43a98f12",
+            "title": "Fish Fillet Burger",
+            "description": "Flaky and flavorful fish fillet burger for a unique taste.",
+            "images": [
+                "/menu/fish-burger-2x3.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 12.99,
+                "bah": 3.00
+            },
+            "instock": 18,
+            "allergens": [
+                "Fish"
+            ],
+            "totalCalories": 420,
+            "itemParts": [
+                {
+                    "name": "Fish fillet burger",
+                    "calories": 420
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "7f20b9ca-3df0-4a45-9d86-67e0804e2c6b",
+            "title": "Egg Sandwich",
+            "description": "Classic egg sandwich for a delightful breakfast.",
+            "images": [
+                "/menu/egg-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Breakfast"
+            ],
+            "price": {
+                "sar": 12.99,
+                "bah": 2.99
+            },
+            "instock": 15,
+            "allergens": [
+                "Gluten",
+                "Egg"
+            ],
+            "totalCalories": 300,
+            "itemParts": [
+                {
+                    "name": "2 eggs",
+                    "calories": 140
+                },
+                {
+                    "name": "1 bread bun",
+                    "calories": 160
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "a67a3dfe-531e-4c51-97aa-0922154e5f55",
+            "title": "Falafel Meal",
+            "description": "A fulfilling meal with crispy falafel and assorted sides.",
+            "images": [
+                "/menu/falafel-meal-2x3.jpg"
+            ],
+            "categories": [
+                "Vegetarian",
+                "Breakfast"
+            ],
+            "price": {
+                "sar": 18.99,
+                "bah": 4.49
+            },
+            "instock": 25,
+            "allergens": [
+                "Soybeans",
+                "Gluten"
+            ],
+            "totalCalories": 450,
+            "itemParts": [
+                {
+                    "name": "4 falafel pieces",
+                    "calories": 240
+                },
+                {
+                    "name": "1 serving of hummus",
+                    "calories": 120
+                },
+                {
+                    "name": "1 pita bread",
+                    "calories": 90
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "18f62f40-5e4e-4d23-bf68-1cc064b2ec04",
+            "title": "Falafel Nuggets",
+            "description": "Crispy falafel nuggets for a quick and tasty snack.",
+            "images": [
+                "/menu/falafel-snack-1x1.jpg"
+            ],
+            "categories": [
+                "Vegetarian",
+                "Breakfast"
+            ],
+            "price": {
+                "sar": 8.99,
+                "bah": 2.00
+            },
+            "instock": 30,
+            "allergens": [
+                "Soybeans",
+                "Gluten"
+            ],
+            "totalCalories": 200,
+            "itemParts": [
+                {
+                    "name": "6 falafel nuggets",
+                    "calories": 120
+                },
+                {
+                    "name": "1 side of tahini sauce",
+                    "calories": 80
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "814abae2-2b52-485f-9b4c-2f3f24d0d285",
+            "title": "Falafel Snacks",
+            "description": "Delightful falafel snacks for a quick and tasty treat.",
+            "images": [
+                "/menu/falafel-snack-1x1.jpg"
+            ],
+            "categories": [
+                "Vegetarian",
+                "Breakfast"
+            ],
+            "price": {
+                "sar": 6.99,
+                "bah": 1.50
+            },
+            "instock": 40,
+            "allergens": [
+                "Soybeans",
+                "Gluten"
+            ],
+            "totalCalories": 180,
+            "itemParts": [
+                {
+                    "name": "5 falafel bites",
+                    "calories": 100
+                },
+                {
+                    "name": "1 side of garlic sauce",
+                    "calories": 80
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "a9f55129-0b10-4d6e-bfdf-01873373a8d1",
+            "title": "Falafel Sandwich",
+            "description": "Satisfying falafel sandwich with fresh veggies and tahini sauce.",
+            "images": [
+                "/menu/falafel-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Vegetarian",
+                "Breakfast"
+            ],
+            "price": {
+                "sar": 10.99,
+                "bah": 2.50
+            },
+            "instock": 25,
+            "allergens": [
+                "Soybeans",
+                "Gluten",
+                "Sesame"
+            ],
+            "totalCalories": 320,
+            "itemParts": [
+                {
+                    "name": "2 falafel patties",
+                    "calories": 200
+                },
+                {
+                    "name": "1 serving of tahini sauce",
+                    "calories": 120
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "678eab61-0b6b-4bc9-9bea-40c601c26b9b",
+            "title": "Pepsi",
+            "description": "Refreshing Pepsi beverage to quench your thirst.",
+            "images": [
+                "/menu/pepsi-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 1.99,
+                "bah": 0.50
+            },
+            "instock": 40,
+            "allergens": [],
+            "totalCalories": 150,
+            "itemParts": [
+                {
+                    "name": "1 can of Pepsi",
+                    "calories": 150
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "3f88c95d-2d91-4192-9c7d-61a5e05aa63d",
+            "title": "Hummus",
+            "description": "Creamy hummus dip made with chickpeas, tahini, and olive oil.",
+            "images": [
+                "/menu/hommos-1x1.jpg"
+            ],
+            "categories": [
+                "Vegetarian",
+                "Sides"
+            ],
+            "price": {
+                "sar": 7.99,
+                "bah": 1.75
+            },
+            "instock": 35,
+            "allergens": [
+                "Sesame"
+            ],
+            "totalCalories": 150,
+            "itemParts": [
+                {
+                    "name": "1 serving of hummus",
+                    "calories": 150
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "9a7e1a8b-6f72-47c0-8f89-94d757b3c2f1",
+            "title": "ALBAIK 8 Piece Chicken Meal",
+            "description": "ALBAIK's famous 8-piece chicken meal with sides.",
+            "images": [
+                "/menu/chicken-pfc-8pc-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 32.99,
+                "bah": 7.99
+            },
+            "instock": 12,
+            "allergens": [],
+            "totalCalories": 850,
+            "itemParts": [
+                {
+                    "name": "8 pieces of chicken",
+                    "calories": 640
+                },
+                {
+                    "name": "1 large fries",
+                    "calories": 210
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "e0e3a2c1-8f38-49c1-a24e-942b013ad1c9",
+            "title": "ALBAIK 4 Piece Chicken Meal",
+            "description": "ALBAIK's delightful 4-piece chicken meal with sides.",
+            "images": [
+                "/menu/chicken-pfc-4pc-2x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 18.99,
+                "bah": 4.29
+            },
+            "instock": 15,
+            "allergens": [],
+            "totalCalories": 450,
+            "itemParts": [
+                {
+                    "name": "4 pieces of chicken",
+                    "calories": 320
+                },
+                {
+                    "name": "1 regular fries",
+                    "calories": 130
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "1e9b3b2e-25a9-4203-ae96-28cc155c45cf",
+            "title": "Coleslaw Salad",
+            "description": "Fresh coleslaw salad with a tangy dressing.",
+            "images": [
+                "/menu/coleslaw-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 6.99,
+                "bah": 1.50
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 120,
+            "itemParts": [
+                {
+                    "name": "Coleslaw salad",
+                    "calories": 120
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "02e7154f-e76c-42bf-b2b5-49622ce5ac04",
+            "title": "Corn in a Cup",
+            "description": "Sweet corn served in a cup with a hint of seasoning.",
+            "images": [
+                "/menu/corn-in-cup-1x1.jpg"
+            ],
+            "categories": [
+                "Sides",
+                "Vegetarian"
+            ],
+            "price": {
+                "sar": 4.99,
+                "bah": 1.00
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 100,
+            "itemParts": [
+                {
+                    "name": "Corn in a cup",
+                    "calories": 100
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "356f9d21-0981-4e49-b8c5-c870ff3a9657",
+            "title": "10 Piece Chicken Nuggets Meal",
+            "description": "A delicious meal with 10 crispy chicken nuggets and a side.",
+            "images": [
+                "/menu/chicken-nuggets-10pc-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 15.99,
+                "bah": 3.49
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 400,
+            "itemParts": [
+                {
+                    "name": "10 chicken nuggets",
+                    "calories": 300
+                },
+                {
+                    "name": "1 side of fries",
+                    "calories": 100
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "79e8c9cb-8a9a-4b93-b0e9-93df17df5c7d",
+            "title": "BBQ Baik",
+            "description": "Savory BBQ chicken from Baik, perfect for a hearty meal.",
+            "images": [
+                "/menu/bbq-baik-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 24.99,
+                "bah": 5.99
+            },
+            "instock": 15,
+            "allergens": [],
+            "totalCalories": 350,
+            "itemParts": [
+                {
+                    "name": "BBQ chicken",
+                    "calories": 250
+                },
+                {
+                    "name": "1 serving of coleslaw",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "cdeef062-1d38-4d23-9c7e-d873f9d9b130",
+            "title": "Mirinda-Citrus",
+            "description": "Refreshing Mirinda Citrus beverage for a burst of flavor.",
+            "images": [
+                "/menu/mirinda-citrus-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 2.49,
+                "bah": 0.60
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 120,
+            "itemParts": [
+                {
+                    "name": "1 can of Mirinda Citrus",
+                    "calories": 120
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "16f47782-e20b-4a97-bc9f-5ea2676a1f97",
+            "title": "7 Piece Chicken Nuggets Meal",
+            "description": "A tasty meal with 7 crispy chicken nuggets and a side.",
+            "images": [
+                "/menu/chicken-nuggets-7pc-2x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 12.99,
+                "bah": 2.99
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 320,
+            "itemParts": [
+                {
+                    "name": "7 chicken nuggets",
+                    "calories": 220
+                },
+                {
+                    "name": "1 side of fries",
+                    "calories": 100
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "d891db12-2aeb-4b07-99db-5ad42f789a6c",
+            "title": "BAIKEEZ-Chicken Thighs",
+            "description": "Juicy and flavorful chicken thighs from BAIKEEZ.",
+            "images": [
+                "/menu/baikeez-chicken-thighs-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 19.99,
+                "bah": 4.99
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 320,
+            "itemParts": [
+                {
+                    "name": "2 chicken thighs",
+                    "calories": 240
+                },
+                {
+                    "name": "1 serving of coleslaw",
+                    "calories": 80
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "b6b5e7a2-aeff-4d0d-9b33-ef6a4a1f86d1",
+            "title": "Fillet Nugget Snacks",
+            "description": "Delicious fillet nuggets for a quick and satisfying snack.",
+            "images": [
+                "/menu/fillet-nugget-snacks-1x1.jpg"
+            ],
+            "categories": [
+                "Chicken",
+                "Sides"
+            ],
+            "price": {
+                "sar": 8.99,
+                "bah": 2.00
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 200,
+            "itemParts": [
+                {
+                    "name": "Fillet nuggets",
+                    "calories": 200
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "19c3fcf2-1b52-4a7c-8aae-8c9790da1841",
+            "title": "Strawberry Ice Cream",
+            "description": "Creamy and refreshing strawberry-flavored ice cream.",
+            "images": [
+                "/menu/icecream-strawberry-1x1.jpg"
+            ],
+            "categories": [
+                "Desserts"
+            ],
+            "price": {
+                "sar": 5.99,
+                "bah": 1.50
+            },
+            "instock": 25,
+            "allergens": [
+                "Milk"
+            ],
+            "totalCalories": 180,
+            "itemParts": [
+                {
+                    "name": "1 scoop of strawberry ice cream",
+                    "calories": 180
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "8bba68cf-68f9-4ec9-bd92-8b61e003f42a",
+            "title": "Cocktail Sauce",
+            "description": "Tangy and flavorful cocktail sauce for dipping.",
+            "images": [
+                "/menu/cocktail-sauce-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 2.49,
+                "bah": 0.60
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 40,
+            "itemParts": [
+                {
+                    "name": "Cocktail sauce",
+                    "calories": 40
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "5a2e8836-0845-4c2e-81b9-107a7a57e084",
+            "title": "Big BAIK with Cheese",
+            "description": "The classic Big BAIK burger with added cheesy goodness.",
+            "images": [
+                "/menu/big-baik-with-cheese-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 14.99,
+                "bah": 3.50
+            },
+            "instock": 15,
+            "allergens": [
+                "Milk"
+            ],
+            "totalCalories": 550,
+            "itemParts": [
+                {
+                    "name": "1 Big BAIK with cheese",
+                    "calories": 550
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "1e72a853-2aaf-4c61-b208-e0f82b2b2565",
+            "title": "Big BAIK",
+            "description": "The classic Big BAIK burger for a hearty appetite.",
+            "images": [
+                "/menu/big-baik-2x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 12.99,
+                "bah": 3.00
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 500,
+            "itemParts": [
+                {
+                    "name": "1 Big BAIK burger",
+                    "calories": 500
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "6075e399-bb37-4b1b-84e1-42b932cfb3b7",
+            "title": "ALBAIK Maamoul",
+            "description": "Traditional Maamoul from ALBAIK for a sweet treat.",
+            "images": [
+                "/menu/mamoul-2x1.jpg"
+            ],
+            "categories": [
+                "Desserts",
+                "Sides"
+            ],
+            "price": {
+                "sar": 3.99,
+                "bah": 1.00
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 250,
+            "itemParts": [
+                {
+                    "name": "1 piece of ALBAIK Maamoul",
+                    "calories": 250
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "ccbb8c54-cdb0-4f90-ba1e-31d0907c1c50",
+            "title": "Chicken Fillet Sandwich",
+            "description": "Delicious chicken fillet sandwich with fresh ingredients.",
+            "images": [
+                "/menu/chicken-sandwich-1x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 9.99,
+                "bah": 2.50
+            },
+            "instock": 15,
+            "allergens": [],
+            "totalCalories": 400,
+            "itemParts": [
+                {
+                    "name": "Chicken fillet sandwich",
+                    "calories": 400
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "c9ebf13a-5a0b-4abf-8309-e7e9c0a1ad2a",
+            "title": "ALBAIK Shawerma with Garlic Sauce",
+            "description": "Classic ALBAIK Shawerma with a flavorful garlic sauce.",
+            "images": [
+                "/menu/shawarma-garlic-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 11.99,
+                "bah": 3.00
+            },
+            "instock": 18,
+            "allergens": [],
+            "totalCalories": 480,
+            "itemParts": [
+                {
+                    "name": "ALBAIK Shawerma",
+                    "calories": 400
+                },
+                {
+                    "name": "Garlic sauce",
+                    "calories": 80
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "78e16d37-2f91-4df5-b3c5-5bba534af8a4",
+            "title": "ALBAIK Shawerma with Tahina Sauce",
+            "description": "ALBAIK Shawerma served with a rich Tahina sauce.",
+            "images": [
+                "/menu/shawarma-tahina-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 12.99,
+                "bah": 3.50
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 520,
+            "itemParts": [
+                {
+                    "name": "ALBAIK Shawerma",
+                    "calories": 400
+                },
+                {
+                    "name": "Tahina sauce",
+                    "calories": 120
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "55f7323c-cc23-447b-a8b6-4c74e471df9c",
+            "title": "Saj DeLite with Delite Sauce",
+            "description": "Light and delightful Saj with a special Delite sauce.",
+            "images": [
+                "/menu/saj-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Vegetarian"
+            ],
+            "price": {
+                "sar": 8.99,
+                "bah": 2.00
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 350,
+            "itemParts": [
+                {
+                    "name": "Saj DeLite",
+                    "calories": 250
+                },
+                {
+                    "name": "Delite sauce",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "3ea83ad8-d7a2-4643-b0bf-4ec9f272b9a3",
+            "title": "Double BAIK",
+            "description": "Double the delight with this hearty BAIK burger.",
+            "images": [
+                "/menu/double-burger-2x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 14.99,
+                "bah": 3.50
+            },
+            "instock": 15,
+            "allergens": [],
+            "totalCalories": 600,
+            "itemParts": [
+                {
+                    "name": "Double BAIK burger",
+                    "calories": 600
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "b4a9936c-6b85-41c9-b68e-c4df26f7c015",
+            "title": "Chicken Fillet Burger",
+            "description": "Satisfy your cravings with this flavorful chicken fillet burger.",
+            "images": [
+                "/menu/chicken-burger-2x2.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 10.99,
+                "bah": 2.50
+            },
+            "instock": 20,
+            "allergens": [],
+            "totalCalories": 480,
+            "itemParts": [
+                {
+                    "name": "Chicken fillet burger",
+                    "calories": 480
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "e9c13e1e-2b82-4da2-9267-04e03a5c282e",
+            "title": "Tawuk",
+            "description": "Juicy and succulent Tawuk for a delightful meal.",
+            "images": [
+                "/menu/tawuk-sandwich-1x3.jpg"
+            ],
+            "categories": [
+                "Chicken"
+            ],
+            "price": {
+                "sar": 13.99,
+                "bah": 3.00
+            },
+            "instock": 22,
+            "allergens": [],
+            "totalCalories": 550,
+            "itemParts": [
+                {
+                    "name": "Tawuk",
+                    "calories": 550
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "b7e23dd6-1de0-47a3-843b-9f44deaf8e7e",
+            "title": "Fish Fillet Meal",
+            "description": "A satisfying meal featuring delicious fish fillet and sides.",
+            "images": [
+                "/menu/fish-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 16.99,
+                "bah": 4.00
+            },
+            "instock": 15,
+            "allergens": [
+                "Fish"
+            ],
+            "totalCalories": 650,
+            "itemParts": [
+                {
+                    "name": "Fish fillet",
+                    "calories": 420
+                },
+                {
+                    "name": "1 serving of coleslaw",
+                    "calories": 80
+                },
+                {
+                    "name": "1 side of fries",
+                    "calories": 150
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "d4dbf849-6c56-4e5c-9f15-22bb88223d5c",
+            "title": "12 Piece Jumbo Shrimp Meal",
+            "description": "A delightful meal with 12 pieces of jumbo shrimp and sides.",
+            "images": [
+                "/menu/shrimp-jumbo-12pc-2x3.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 34.99,
+                "bah": 8.99
+            },
+            "instock": 15,
+            "allergens": [],
+            "totalCalories": 600,
+            "itemParts": [
+                {
+                    "name": "12 pieces of jumbo shrimp",
+                    "calories": 480
+                },
+                {
+                    "name": "1 side of fries",
+                    "calories": 120
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "ef3a3c59-703b-48e2-a1b7-2b7e8908a726",
+            "title": "10 Piece Jumbo Shrimp Meal",
+            "description": "A satisfying meal with 10 pieces of jumbo shrimp and sides.",
+            "images": [
+                "/menu/shrimp-jumbo-10pc-no-extras-2x2.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 29.99,
+                "bah": 7.49
+            },
+            "instock": 18,
+            "allergens": [],
+            "totalCalories": 500,
+            "itemParts": [
+                {
+                    "name": "10 pieces of jumbo shrimp",
+                    "calories": 400
+                },
+                {
+                    "name": "1 side of fries",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "d7d9e0cb-5671-4c6c-8eae-0ce6eaf26f9c",
+            "title": "Value Shrimp Meal",
+            "description": "A value-packed meal with shrimp and sides.",
+            "images": [
+                "/menu/shrimp-value-2x3.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 19.99,
+                "bah": 4.99
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 350,
+            "itemParts": [
+                {
+                    "name": "6 pieces of shrimp",
+                    "calories": 210
+                },
+                {
+                    "name": "1 regular fries",
+                    "calories": 140
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "24c45e32-22a3-4a0c-8b8f-d4f4e496c2f2",
+            "title": "Fish Fillet Sandwich",
+            "description": "A delicious sandwich with crispy fish fillet.",
+            "images": [
+                "/menu/fish-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 11.99,
+                "bah": 3.00
+            },
+            "instock": 22,
+            "allergens": [
+                "Fish",
+                "Gluten"
+            ],
+            "totalCalories": 400,
+            "itemParts": [
+                {
+                    "name": "1 fish fillet sandwich",
+                    "calories": 400
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "70d5d67b-4b99-4c04-9d68-f3dd24bf4c9a",
+            "title": "Shrimp Sandwich",
+            "description": "A tasty sandwich filled with succulent shrimp.",
+            "images": [
+                "/menu/shrimp-sandwich-1x2.jpg"
+            ],
+            "categories": [
+                "Seafood"
+            ],
+            "price": {
+                "sar": 13.99,
+                "bah": 3.50
+            },
+            "instock": 20,
+            "allergens": [
+                "Crustaceans",
+                "Gluten"
+            ],
+            "totalCalories": 450,
+            "itemParts": [
+                {
+                    "name": "1 shrimp sandwich",
+                    "calories": 450
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "35fe0f1d-bd19-4bd7-805a-7d1c7cf18e63",
+            "title": "Corn on the Cob",
+            "description": "Grilled corn on the cob seasoned to perfection.",
+            "images": [
+                "/menu/corn-on-cob-1x1.jpg"
+            ],
+            "categories": [
+                "Sides",
+                "Vegetarian"
+            ],
+            "price": {
+                "sar": 3.99,
+                "bah": 1.00
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 120,
+            "itemParts": [
+                {
+                    "name": "1 corn on the cob",
+                    "calories": 120
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "1bf2e07d-918a-4a12-b469-0c42958d0f18",
+            "title": "ALBAIK Chips",
+            "description": "Crispy and flavorful chips from ALBAIK.",
+            "images": [
+                "/menu/albaik-chips-2x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 4.99,
+                "bah": 1.00
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 200,
+            "itemParts": [
+                {
+                    "name": "ALBAIK chips",
+                    "calories": 200
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "c5494d18-4f27-4fc3-bb43-39a7b92eaad9",
+            "title": "Fries with Garlic Sauce",
+            "description": "Delicious fries served with garlic sauce for a flavorful experience.",
+            "images": [
+                "/menu/fries-with-garlic-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 6.99,
+                "bah": 1.50
+            },
+            "instock": 22,
+            "allergens": [],
+            "totalCalories": 300,
+            "itemParts": [
+                {
+                    "name": "1 serving of fries",
+                    "calories": 200
+                },
+                {
+                    "name": "1 side of garlic sauce",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "a4f25a61-6862-4a91-8a5c-4fb4e71c93c8",
+            "title": "French Fries",
+            "description": "Classic French fries for a crispy and satisfying snack.",
+            "images": [
+                "/menu/fries-2x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 5.99,
+                "bah": 1.00
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 250,
+            "itemParts": [
+                {
+                    "name": "1 serving of fries",
+                    "calories": 250
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "df1e0a8e-7a4a-4d4b-88ab-33ecfb8f4d56",
+            "title": "Bread Buns",
+            "description": "Soft and fluffy bread buns for a delightful meal.",
+            "images": [
+                "/menu/bun-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 3.99,
+                "bah": 1.00
+            },
+            "instock": 40,
+            "allergens": [
+                "Gluten"
+            ],
+            "totalCalories": 150,
+            "itemParts": [
+                {
+                    "name": "2 bread buns",
+                    "calories": 150
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "d30b7a5a-cd46-432d-8fb5-01b1df464779",
+            "title": "Garlic Sauce",
+            "description": "Rich and creamy garlic sauce for a flavorful experience.",
+            "images": [
+                "/menu/garlic-sauce-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 2.99,
+                "bah": 0.75
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 60,
+            "itemParts": [
+                {
+                    "name": "Garlic sauce",
+                    "calories": 60
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "348ef7b2-42fb-401a-a327-688c4db7c2aa",
+            "title": "Nugget Sauce",
+            "description": "Dipping sauce specially crafted for chicken nuggets.",
+            "images": [
+                "/menu/nugget-sauce-1x1.jpg"
+            ],
+            "categories": [
+                "Sides"
+            ],
+            "price": {
+                "sar": 1.99,
+                "bah": 0.50
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 40,
+            "itemParts": [
+                {
+                    "name": "Nugget sauce",
+                    "calories": 40
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "a0af21fc-01c6-4314-bb68-835a896c62ee",
+            "title": "Chocolate Ice Cream",
+            "description": "Indulge in the rich and creamy flavor of chocolate ice cream.",
+            "images": [
+                "/menu/icecream-chocolate-2x1.jpg"
+            ],
+            "categories": [
+                "Desserts"
+            ],
+            "price": {
+                "sar": 6.99,
+                "bah": 1.75
+            },
+            "instock": 20,
+            "allergens": [
+                "Milk"
+            ],
+            "totalCalories": 220,
+            "itemParts": [
+                {
+                    "name": "1 scoop of chocolate ice cream",
+                    "calories": 220
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "c39c80eb-b719-44b7-a6a5-3e0e01fc4ac1",
+            "title": "Vanilla Ice Cream",
+            "description": "Classic and smooth vanilla-flavored ice cream.",
+            "images": [
+                "/menu/icecream-vanilla-2x1.jpg"
+            ],
+            "categories": [
+                "Desserts"
+            ],
+            "price": {
+                "sar": 5.99,
+                "bah": 1.50
+            },
+            "instock": 25,
+            "allergens": [
+                "Milk"
+            ],
+            "totalCalories": 180,
+            "itemParts": [
+                {
+                    "name": "1 scoop of vanilla ice cream",
+                    "calories": 180
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "e019b96a-552d-43de-a172-7c2eef10e232",
+            "title": "Pepsi Diet",
+            "description": "Crisp and refreshing diet Pepsi for a guilt-free drink.",
+            "images": [
+                "/menu/pepsi-diet-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 1.99,
+                "bah": 0.50
+            },
+            "instock": 35,
+            "allergens": [],
+            "totalCalories": 0,
+            "itemParts": [
+                {
+                    "name": "1 can of Pepsi Diet",
+                    "calories": 0
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "b6aef742-8e5b-4a0c-a36d-3d7b25b59b8a",
+            "title": "Seven Up",
+            "description": "Lively and effervescent Seven Up beverage for a delightful sip.",
+            "images": [
+                "/menu/7up-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 1.79,
+                "bah": 0.45
+            },
+            "instock": 40,
+            "allergens": [],
+            "totalCalories": 140,
+            "itemParts": [
+                {
+                    "name": "1 can of Seven Up",
+                    "calories": 140
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "4a83cf52-53a2-4c72-ba06-19842b913717",
+            "title": "Mirinda",
+            "description": "Exotic and citrusy Mirinda beverage for a burst of flavor.",
+            "images": [
+                "/menu/mirinda-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 2.29,
+                "bah": 0.55
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 120,
+            "itemParts": [
+                {
+                    "name": "1 can of Mirinda",
+                    "calories": 120
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "1bf0d367-1c69-4a76-9b13-645a7f2daffc",
+            "title": "Water",
+            "description": "Pure and refreshing water to quench your thirst.",
+            "images": [
+                "/menu/water-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 0.99,
+                "bah": 0.25
+            },
+            "instock": 50,
+            "allergens": [],
+            "totalCalories": 0,
+            "itemParts": [
+                {
+                    "name": "1 bottle of water",
+                    "calories": 0
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "ed6c413f-bc8d-42a1-a1c5-692f8e400a64",
+            "title": "Lipton Ice Tea Lemon",
+            "description": "Refreshing Lipton Ice Tea with a zesty lemon flavor.",
+            "images": [
+                "/menu/lipton-lemon-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 2.49,
+                "bah": 0.60
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 80,
+            "itemParts": [
+                {
+                    "name": "1 can of Lipton Ice Tea Lemon",
+                    "calories": 80
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "7f96f66a-87d6-4b7a-940b-24bba2677c99",
+            "title": "Lipton Ice Tea Peach",
+            "description": "Lipton Ice Tea with a delightful peach flavor.",
+            "images": [
+                "/menu/lipton-peach-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 2.49,
+                "bah": 0.60
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 90,
+            "itemParts": [
+                {
+                    "name": "1 can of Lipton Ice Tea Peach",
+                    "calories": 90
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "e3ff86e3-21b3-4c04-b85a-57a0b6f3d61f",
+            "title": "Orange Juice",
+            "description": "Freshly squeezed orange juice for a burst of vitamin C.",
+            "images": [
+                "/menu/orange-juice-300ml-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 3.99,
+                "bah": 1.00
+            },
+            "instock": 35,
+            "allergens": [],
+            "totalCalories": 120,
+            "itemParts": [
+                {
+                    "name": "1 glass of orange juice",
+                    "calories": 120
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "4b916619-22d3-4d72-b2d5-0c26797d88d4",
+            "title": "Apple Juice",
+            "description": "Sweet and crisp apple juice for a refreshing experience.",
+            "images": [
+                "/menu/apple-juice-300ml-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 3.49,
+                "bah": 0.90
+            },
+            "instock": 40,
+            "allergens": [],
+            "totalCalories": 100,
+            "itemParts": [
+                {
+                    "name": "1 glass of apple juice",
+                    "calories": 100
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "e3ff86e3-21b3-4c04-b85a-57a0b6f3d61f",
+            "title": "Mango & Grape Juice",
+            "description": "A delightful blend of mango and grape juice.",
+            "images": [
+                "/menu/mango-juice-300ml-2x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 4.29,
+                "bah": 1.10
+            },
+            "instock": 30,
+            "allergens": [],
+            "totalCalories": 110,
+            "itemParts": [
+                {
+                    "name": "1 glass of mango & grape juice",
+                    "calories": 110
+                }
+            ],
+            "highlighted": false
+        },
+        {
+            "id": "c0cc7bf4-cf3a-446a-9d44-132e9d8f0137",
+            "title": "Mixed Fruit Juice",
+            "description": "A refreshing medley of mixed fruit juice.",
+            "images": [
+                "/menu/mixed-fruit-juice-300ml-1x1.jpg"
+            ],
+            "categories": [
+                "Beverages"
+            ],
+            "price": {
+                "sar": 4.99,
+                "bah": 1.20
+            },
+            "instock": 25,
+            "allergens": [],
+            "totalCalories": 130,
+            "itemParts": [
+                {
+                    "name": "1 glass of mixed fruit juice",
+                    "calories": 130
+                }
+            ],
+            "highlighted": true
+        },
+        {
+            "id": "7f5c4cb4-b0e5-4a8b-b4c4-1a7b8f4965a5",
+            "title": "Egg Sandwich with Chicken and Cheese",
+            "description": "A delicious sandwich with eggs, chicken, and cheese.",
+            "images": [
+                "/menu/egg-chicken-sandwich-1x3.jpg"
+            ],
+            "categories": [
+                "Breakfast",
+                "Chicken"
+            ],
+            "price": {
+                "sar": 10.99,
+                "bah": 2.50
+            },
+            "instock": 20,
+            "allergens": [
+                "Egg",
+                "Milk"
+            ],
+            "totalCalories": 350,
+            "itemParts": [
+                {
+                    "name": "1 egg and chicken sandwich with cheese",
+                    "calories": 350
+                }
+            ],
+            "highlighted": true
         }
-    ],
-    "Chicken": [],
-    "Seafood": [],
-    "Vegetarian": [],
-    "Sides": [],
-    "Desserts": [],
-    "Beverages": []
+    ]
 }

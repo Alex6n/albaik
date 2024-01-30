@@ -3,7 +3,8 @@ import "./globals.css";
 import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 
-// TODO: Refactor and Mock a menu details
+// TODO: Fetch data from backend and pass it to menu components using tRPC
+// TODO: Refactor
 
 // TODO: Create Orders Page
 // TODO: Create Order Details Component

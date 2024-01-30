@@ -4,9 +4,12 @@ import MenuItemDetails from "./MenuItemDetails";
 import MenuItemActions from "./MenuItemActions";
 
 export interface MenuItemType {
+  id: string;
   title: string;
   description: string;
   images: string[];
+  categories: string[];
+  instock: number;
   allergens: string[];
   totalCalories: number;
   price: {
