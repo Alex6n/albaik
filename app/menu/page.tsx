@@ -1,19 +1,9 @@
 import Catogeries from "@/components/Menu/Catogeries";
 import { ImageSlider } from "@/components/Menu/ImageSlider";
+import { MenuItemType } from "@/components/Menu/MenuItem";
 import MenuList from "@/components/Menu/MenuList";
 
 const images = ["/offers/offer1.jpg", "/offers/offer2.jpg"];
-
-const categories = [
-  "All",
-  "Breakfast",
-  "Chicken",
-  "Seafood",
-  "Vegetarian",
-  "Sides",
-  "Desserts",
-  "Beverages",
-];
 
 const items = [
   {
@@ -58,7 +48,7 @@ const items = [
   },
 ];
 
-const page = async () => {
+const Page = () => {
   return (
     <section>
       <div className="bg-[#CE3737]/90 py-5 text-background font-bold text-center text-7xl">
@@ -67,7 +57,7 @@ const page = async () => {
       <div className="my-3 flex justify-center">
         <div className="max-w-[1035px] mb-5">
           <ImageSlider images={images} />
-          <Catogeries catogeries={categories} />
+          <Catogeries />
           <MenuList items={items} />
         </div>
       </div>
@@ -75,4 +65,4 @@ const page = async () => {
   );
 };
 
-export default page;
+export default Page;
