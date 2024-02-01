@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { ImageSlider } from "./ImageSlider";
+import ImageSlider from "./ImageSlider";
 import { Button } from "../ui/button";
 import { MenuItemType } from "./MenuItem";
 
@@ -12,15 +12,19 @@ interface MenuItemActionsProps {
 // TODO : Add price
 
 const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
-  const { images, title, description } = details;
+  const { images, title, description, instock } = details;
 
   const [quantity, setQuantity] = useState(1);
 
   return (
-    <div className={`w-[360px] text-red-950 ${className}`}>
-      <ImageSlider images={images} play={false} />
-      <h1 className="text-xl font-bold my-2 mx-1">{title}</h1>
-      <p className="w-full leading-5 mx-1">{description}</p>
+    <div
+      className={`w-[360px] max-h-[520px] flex flex-col justify-between text-red-950 ${className}`}
+    >
+      <div>
+        <ImageSlider images={images} play={false} className="h-[50%]" />
+        <h1 className="text-xl font-bold my-2 mx-1">{title}</h1>
+        <p className="w-full leading-5 mx-1">{description}</p>
+      </div>
       <div className="flex mt-4 justify-between">
         <div className="flex items-center gap-3 rounded-md font-bold text-md">
           <Button
@@ -41,7 +45,10 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
             +
           </Button>
         </div>
-        <Button className="my-0 rounded-[4px] border-none text-sm hover:translate-y-0">
+        <Button
+          disabled={instock > 0 ? false : true}
+          className="my-0 rounded-[4px] border-none text-sm hover:translate-y-0"
+        >
           Add to order
         </Button>
       </div>

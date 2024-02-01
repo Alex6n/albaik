@@ -38,7 +38,7 @@ const MenuItem = ({ children, className, details }: MenuItemProps) => {
         <div className="flex justify-between gap-3">
           <MenuItemDetails
             details={details}
-            className="md:block hidden border-r border-black/5"
+            className="md:flex hidden border-r border-black/5"
           />
           <MenuItemActions details={details} />
         </div>
