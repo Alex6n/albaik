@@ -1,0 +1,26 @@
+{
+    "navItems": [
+        {
+            "label": "Story",
+            "href": "/#story"
+        },
+        {
+            "label": "Purpose",
+            "href": "/#purpose"
+        },
+        {
+            "label": "Menu",
+            "href": "/menu"
+        }
+    ],
+    "policyLinks": [
+        {
+            "label": "Terms & Conditions",
+            "href": "terms"
+        },
+        {
+            "label": "Food Safety Policy",
+            "href": "safety"
+        }
+    ]
+}
