@@ -37,7 +37,7 @@ const ImageSlider = ({
               alt={image}
               height={650}
               width={1035}
-              className={`object-cover aspect-square w-full h-full lg:rounded-xl cursor-pointer rounded-lg ${className}`}
+              className={`object-cover h-full lg:rounded-xl cursor-pointer rounded-lg ${className}`}
             />
           </CarouselItem>
         ))}

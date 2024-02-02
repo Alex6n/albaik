@@ -12,10 +12,7 @@ const Page = () => {
       </div>
       <div className="my-3 flex justify-center">
         <div className="max-w-[1035px]">
-          {/* <ImageSlider
-            className="lg:max-h-[650px] lg:max-w-[1035px]"
-            images={images}
-          /> */}
+          <ImageSlider className="lg:max-h-[400px]" images={images} />
         </div>
       </div>
       <Catogeries />

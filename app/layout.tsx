@@ -28,8 +28,8 @@ export default function RootLayout({
   );
 }
 
-// TODO: Fetch data from backend and pass it to menu components using tRPC
-// TODO: Refactor
+// TODO: Finish Cart Logic and Shared states
+// TODO: Fetching Error Handling
 
 // TODO: Create Orders Page
 // TODO: Create Order Details Component
@@ -37,7 +37,6 @@ export default function RootLayout({
 
 // TODO: Tracking Order
 // TODO: Profile Page
-// TODO: Finish Cart Logic and Shared states
 
 // TODO: Demo Options prompt to browse all pages without backend
 // TODO: Change Language

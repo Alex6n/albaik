@@ -27,7 +27,11 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
       className={`w-[360px]  flex flex-col justify-between text-red-950 ${className}`}
     >
       <div>
-        <ImageSlider images={images} play={false} className="h-[50%]" />
+        <ImageSlider
+          images={images}
+          play={false}
+          className="h-[50%] aspect-square"
+        />
         <h1 className="text-xl font-bold my-2 mx-1">{title}</h1>
         <p className="w-full leading-5 mx-1">{description}</p>
       </div>
