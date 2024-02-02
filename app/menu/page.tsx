@@ -11,15 +11,15 @@ const Page = () => {
         Menu
       </div>
       <div className="my-3 flex justify-center">
-        <div className="max-w-[1035px] mb-5">
+        <div className="max-w-[1035px]">
           {/* <ImageSlider
             className="lg:max-h-[650px] lg:max-w-[1035px]"
             images={images}
           /> */}
-          <Catogeries />
-          <MenuList />
         </div>
       </div>
+      <Catogeries />
+      <MenuList />
     </section>
   );
 };

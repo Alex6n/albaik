@@ -20,7 +20,6 @@ export interface MenuItemType {
     name: string;
     calories: number;
   }[];
-  highlighted: boolean;
   available: boolean;
 }
 

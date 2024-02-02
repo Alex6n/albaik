@@ -87,7 +87,7 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
         </div>
 
         {itemParts.length > 0 && (
-          <ScrollArea className="h-[100px]">
+          <ScrollArea className="h-[200px]">
             {itemParts.map((part) => (
               <div
                 key={part.name}
@@ -110,7 +110,7 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
           per day, and individual calorie needs vary from person to person.
         </div>
 
-        <div className="flex justify-between items-center text-xs font-bold cursor-default mb-1 mt-6 mx-7">
+        <div className="flex justify-center items-center text-xs font-bold cursor-default mb-1 mt-6 mx-7">
           <div className="flex items-center">
             <div
               onClick={() => setSpicy(!spicy)}
@@ -122,8 +122,6 @@ const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
             </div>
             <span className="mx-2">Spicy ?</span>
           </div>
-
-          <div className="text-sm text-secondary">SR {sar}</div>
         </div>
       </div>
     </div>

@@ -1,5 +1,4 @@
 "use client";
-import { cn } from "@/lib/utils";
 import { TimerIcon } from "lucide-react";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
@@ -16,22 +15,16 @@ const MenuList = () => {
   }, [isLoading, menu]);
 
   return (
-    <div className="w-full grid sm:grid-cols-2 md:grid-cols-4 sm:justify-center gap-2">
+    <div className="md:mx-12 lg:mx-24 xl:mx-28 mb-10 grid sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 sm:justify-center gap-2">
       {isLoading
-        ? Array.from({ length: 8 }, (_, index) => (
+        ? Array.from({ length: 18 }, (_, index) => (
             <Skeleton key={index} className="h-[200px] w-full" />
           ))
-        : items.map((details, index) => (
+        : items.map((details) => (
             <MenuItem
               details={details}
               key={details?.title}
-              className={cn(
-                "h-[200px] relative rounded-lg overflow-hidden hover:cursor-pointer",
-                {
-                  "col-span-2":
-                    details?.highlighted && !items[index - 1]?.highlighted,
-                }
-              )}
+              className="h-[200px] relative rounded-lg overflow-hidden hover:cursor-pointer"
             >
               {details?.instock > 0 || (
                 <div className="absolute z-10 text-xs text-red-800 bg-white/80 rounded-xl px-2 py-1 m-2 hover:opacity-100">
