@@ -1,18 +1,28 @@
 "use client";
 import { TimerIcon } from "lucide-react";
 import Image from "next/image";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import MenuItem, { MenuItemType } from "./MenuItem";
 import { useMenuItems } from "@/lib/api/useMenuItems";
 import { Skeleton } from "../ui/skeleton";
+import { CategoryContext, CategoryContextType } from "./CategoryContext";
 
 const MenuList = () => {
   const { data: menu, isLoading } = useMenuItems();
+
   const [items, setItems] = useState<MenuItemType[]>([]);
 
+  const { selected } = useContext(CategoryContext) as CategoryContextType;
+
   useEffect(() => {
-    setItems(menu || []);
-  }, [isLoading, menu]);
+    let filteredItems = menu || [];
+    if (selected !== "All") {
+      filteredItems = menu.filter((item: MenuItemType) =>
+        item.categories.includes(selected)
+      );
+    }
+    setItems(filteredItems);
+  }, [isLoading, menu, selected]);
 
   return (
     <div className="md:mx-12 lg:mx-24 xl:mx-28 mb-10 grid sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 sm:justify-center gap-2">

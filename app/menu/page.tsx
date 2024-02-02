@@ -1,4 +1,6 @@
-import Catogeries from "@/components/Menu/Catogeries";
+"use client";
+import Categories from "@/components/Menu/Categories";
+import { CategoryProvider } from "@/components/Menu/CategoryProvider";
 import ImageSlider from "@/components/Menu/ImageSlider";
 import MenuList from "@/components/Menu/MenuList";
 
@@ -15,8 +17,10 @@ const Page = () => {
           <ImageSlider className="lg:max-h-[400px]" images={images} />
         </div>
       </div>
-      <Catogeries />
-      <MenuList />
+      <CategoryProvider>
+        <Categories />
+        <MenuList />
+      </CategoryProvider>
     </section>
   );
 };

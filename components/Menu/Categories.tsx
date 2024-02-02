@@ -1,13 +1,18 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Button } from "../ui/button";
 import { MenuItemType } from "./MenuItem";
 import { useMenuItems } from "@/lib/api/useMenuItems";
 import { Skeleton } from "@/components/ui/skeleton";
+import { CategoryContext, CategoryContextType } from "./CategoryContext";
 
-const Catogeries = () => {
+const Categories = () => {
   const { data: menu, isLoading } = useMenuItems();
-  const [selected, setSelected] = useState("All");
+
+  const { selected, setSelected } = useContext(
+    CategoryContext
+  ) as CategoryContextType;
+
   const [categories, setCategories] = useState<string[]>([]);
 
   useEffect(() => {
@@ -42,4 +47,4 @@ const Catogeries = () => {
   );
 };
 
-export default Catogeries;
+export default Categories;
