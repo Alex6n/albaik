@@ -9,8 +9,6 @@ interface MenuItemActionsProps {
   details: MenuItemType;
 }
 
-// TODO : Add price
-
 const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
   const {
     images,

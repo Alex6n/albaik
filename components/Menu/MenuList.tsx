@@ -8,7 +8,7 @@ import { Skeleton } from "../ui/skeleton";
 import { CategoryContext, CategoryContextType } from "./CategoryContext";
 
 const MenuList = () => {
-  const { data: menu, isLoading } = useMenuItems();
+  const { data: menu, isLoading, isError } = useMenuItems();
 
   const [items, setItems] = useState<MenuItemType[]>([]);
 
@@ -23,6 +23,13 @@ const MenuList = () => {
     }
     setItems(filteredItems);
   }, [isLoading, menu, selected]);
+
+  if (isError)
+    return (
+      <h2 className="text-xl font-bold text-accent/70 stroke m-10 pt-5 border-zinc-300 text-center">
+        Oops, something went wrong, please try again later..
+      </h2>
+    );
 
   return (
     <div className="md:mx-12 lg:mx-24 xl:mx-28 mb-10 grid sm:grid-cols-2 md:grid-cols-4 xl:grid-cols-6 sm:justify-center gap-2">

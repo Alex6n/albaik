@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { CategoryContext, CategoryContextType } from "./CategoryContext";
 
 const Categories = () => {
-  const { data: menu, isLoading } = useMenuItems();
+  const { data: menu, isLoading, isError } = useMenuItems();
 
   const { selected, setSelected } = useContext(
     CategoryContext
@@ -22,6 +22,8 @@ const Categories = () => {
 
     setCategories(["All", ...uniqueCategories]);
   }, [isLoading, menu]);
+
+  if (isError) return null;
 
   return (
     <div className="my-2 mt-4 flex flex-wrap justify-center gap-1">
