@@ -1,6 +1,6 @@
 "use client";
 import Categories from "@/components/Menu/Categories";
-import { CategoryProvider } from "@/components/Menu/CategoryProvider";
+import { CategoryProvider } from "@/components/Providers/CategoryProvider";
 import ImageSlider from "@/components/Menu/ImageSlider";
 import MenuList from "@/components/Menu/MenuList";
 

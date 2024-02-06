@@ -2,6 +2,7 @@ import React from "react";
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import MenuItemDetails from "./MenuItemDetails";
 import MenuItemActions from "./MenuItemActions";
+import { ItemProvider } from "../Providers/ItemProvider";
 
 export interface MenuItemType {
   id: string;
@@ -34,13 +35,15 @@ const MenuItem = ({ children, className, details }: MenuItemProps) => {
     <Dialog>
       <DialogTrigger className={`${className}`}>{children}</DialogTrigger>
       <DialogContent>
-        <div className="flex justify-between gap-3">
-          <MenuItemDetails
-            details={details}
-            className="md:flex hidden border-r border-black/5"
-          />
-          <MenuItemActions details={details} />
-        </div>
+        <ItemProvider>
+          <div className="flex justify-between gap-3">
+            <MenuItemDetails
+              details={details}
+              className="md:flex hidden border-r border-black/5"
+            />
+            <MenuItemActions details={details} />
+          </div>
+        </ItemProvider>
       </DialogContent>
     </Dialog>
   );

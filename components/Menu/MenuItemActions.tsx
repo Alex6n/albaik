@@ -1,8 +1,12 @@
 "use client";
-import React, { useState } from "react";
+
+import React, { useContext, useState } from "react";
 import ImageSlider from "./ImageSlider";
 import { Button } from "../ui/button";
 import { MenuItemType } from "./MenuItem";
+import { useDispatch } from "react-redux";
+import { add } from "../Cart/cartSlice";
+import { ItemContext, ItemContextType } from "./ItemContext";
 
 interface MenuItemActionsProps {
   className?: string;
@@ -11,6 +15,7 @@ interface MenuItemActionsProps {
 
 const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
   const {
+    id,
     images,
     title,
     description,
@@ -19,6 +24,10 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
   } = details;
 
   const [quantity, setQuantity] = useState(1);
+
+  const { spicy } = useContext(ItemContext) as ItemContextType;
+
+  const dispatch = useDispatch();
 
   return (
     <div
@@ -59,6 +68,7 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
           </Button>
         </div>
         <Button
+          onClick={() => dispatch(add({ id, quantity, spicy }))}
           disabled={instock > 0 ? false : true}
           className="my-0 rounded-[4px] border-none text-sm hover:translate-y-0"
         >

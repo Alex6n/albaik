@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CategoryContext } from "./CategoryContext";
+import { CategoryContext } from "../Menu/CategoryContext";
 
 export const CategoryProvider = ({
   children,

@@ -4,6 +4,7 @@ import Header from "@/components/Layout/Header";
 import Footer from "@/components/Layout/Footer";
 import QueryProvider from "@/components/Providers/QueryProvider";
 import links from "@/public/utils/links.json";
+import ReduxProvider from "@/components/Providers/ReduxProivder";
 
 export const metadata: Metadata = {
   title: "ALBAIK | البيك",
@@ -19,9 +20,11 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-background">
         <QueryProvider>
-          <Header navItems={links.navItems} />
-          {children}
-          <Footer navItems={links.navItems} policyLinks={links.policyLinks} />
+          <ReduxProvider>
+            <Header navItems={links.navItems} />
+            {children}
+            <Footer navItems={links.navItems} policyLinks={links.policyLinks} />
+          </ReduxProvider>
         </QueryProvider>
       </body>
     </html>

@@ -1,8 +1,6 @@
-"use client";
-
 import { Tooltip } from "@mui/material";
 import { ScrollArea } from "../ui/scroll-area";
-import { useState } from "react";
+import { useContext, useState } from "react";
 
 import { FaShrimp } from "react-icons/fa6";
 import { GiSesame } from "react-icons/gi";
@@ -20,6 +18,7 @@ import {
   Wheat,
 } from "lucide-react";
 import { MenuItemType } from "./MenuItem";
+import { ItemContext, ItemContextType } from "./ItemContext";
 
 interface MenuItemDetailsProps {
   className?: string;
@@ -41,11 +40,8 @@ const allergenItems: {
 
 const MenuItemDetails = ({ className, details }: MenuItemDetailsProps) => {
   const { allergens, totalCalories, itemParts } = details;
-  const {
-    price: { sar },
-  } = details;
 
-  const [spicy, setSpicy] = useState(false);
+  const { spicy, setSpicy } = useContext(ItemContext) as ItemContextType;
 
   return (
     <div
