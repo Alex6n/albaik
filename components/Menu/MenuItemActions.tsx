@@ -6,7 +6,7 @@ import { Button } from "../ui/button";
 import { MenuItemType } from "./MenuItem";
 import { useDispatch } from "react-redux";
 import { add } from "../Cart/cartSlice";
-import { ItemContext, ItemContextType } from "./ItemContext";
+import { ItemContext, ItemContextType } from "../../lib/context/ItemContext";
 
 interface MenuItemActionsProps {
   className?: string;

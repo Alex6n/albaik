@@ -18,7 +18,7 @@ import {
   Wheat,
 } from "lucide-react";
 import { MenuItemType } from "./MenuItem";
-import { ItemContext, ItemContextType } from "./ItemContext";
+import { ItemContext, ItemContextType } from "../../lib/context/ItemContext";
 
 interface MenuItemDetailsProps {
   className?: string;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ItemContext } from "../Menu/ItemContext";
+import { ItemContext } from "../../lib/context/ItemContext";
 
 export const ItemProvider = ({ children }: { children: React.ReactNode }) => {
   const [spicy, setSpicy] = useState(false);

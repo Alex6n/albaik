@@ -5,7 +5,10 @@ import { Button } from "../ui/button";
 import { MenuItemType } from "./MenuItem";
 import { useMenuItems } from "@/lib/api/useMenuItems";
 import { Skeleton } from "@/components/ui/skeleton";
-import { CategoryContext, CategoryContextType } from "./CategoryContext";
+import {
+  CategoryContext,
+  CategoryContextType,
+} from "../../lib/context/CategoryContext";
 
 const Categories = () => {
   const { data: menu, isLoading, isError } = useMenuItems();

@@ -6,7 +6,10 @@ import React, { useContext, useEffect, useState } from "react";
 import MenuItem, { MenuItemType } from "./MenuItem";
 import { useMenuItems } from "@/lib/api/useMenuItems";
 import { Skeleton } from "../ui/skeleton";
-import { CategoryContext, CategoryContextType } from "./CategoryContext";
+import {
+  CategoryContext,
+  CategoryContextType,
+} from "../../lib/context/CategoryContext";
 
 const MenuList = () => {
   const { data: menu, isLoading, isError } = useMenuItems();
