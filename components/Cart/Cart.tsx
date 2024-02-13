@@ -14,18 +14,18 @@ import Link from "next/link";
 import { ScrollArea } from "../ui/scroll-area";
 import { Button } from "../ui/button";
 import CartItem from "./CartItem";
+import { useSelector } from "react-redux";
+import { RootState } from "@/redux/store";
 
-const items = [
-  {
-    id: "123",
-    name: "item",
-    label: "chicken",
-    images: ["/landing/home_hero.jpg"],
-    price: 100,
-  },
-];
+// TODO: add scroll area wrapper to cart items
 
 const Cart = () => {
+  const cart = useSelector((state: RootState) => state.cart);
+
+  const count = cart.reduce((accumulator, currentItem) => {
+    return accumulator + currentItem.quantity;
+  }, 0);
+
   return (
     <Sheet>
       <SheetTrigger className="group -m-2 flex items-center p-2">
@@ -35,13 +35,13 @@ const Cart = () => {
       </SheetTrigger>
       <SheetContent className="flex w-full flex-col pr-0 sm:max-w-lg">
         <SheetHeader className="space-y-2.5 pr-6">
-          <SheetTitle>Cart ({items.length})</SheetTitle>
+          <SheetTitle>Cart ({count})</SheetTitle>
         </SheetHeader>
-        {items.length > 0 ? (
+        {cart.length > 0 ? (
           <>
             <div className="flex w-full flex-col pr-6">
               <ScrollArea>
-                {items.map((item) => (
+                {cart.map((item) => (
                   <CartItem item={item} key={item.id} />
                 ))}
               </ScrollArea>

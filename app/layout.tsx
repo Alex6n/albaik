@@ -31,12 +31,13 @@ export default function RootLayout({
   );
 }
 
-// TODO: Finish Cart Logic and Shared states
-// TODO: Fetching Error Handling
+// TODO: if item already in cart just raise quantity
+// TODO: Remove from cart state
+// TODO: server state
 
+// TODO: Create Checkout Page
 // TODO: Create Orders Page
 // TODO: Create Order Details Component
-// TODO: Create Checkout Page
 
 // TODO: Tracking Order
 // TODO: Profile Page

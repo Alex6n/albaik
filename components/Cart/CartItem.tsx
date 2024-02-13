@@ -1,18 +1,9 @@
 import { ImageIcon, X } from "lucide-react";
 import Image from "next/image";
+import { CartItemProps } from "./cartSlice";
 
-interface CartItemProps {
-  item: {
-    id: string;
-    name: string;
-    label: string;
-    images: string[];
-    price: number;
-  };
-}
-
-const CartItem = ({ item: product }: CartItemProps) => {
-  const image = product.images[0];
+const CartItem = ({ item }: { item: CartItemProps }) => {
+  const { id, name, image, label, price, quantity, spicy } = item;
 
   return (
     <div className="space-y-3 py-2">
@@ -22,7 +13,7 @@ const CartItem = ({ item: product }: CartItemProps) => {
             {typeof image === "string" ? (
               <Image
                 src={image}
-                alt={product.name}
+                alt={name}
                 fill
                 className="absolute object-cover"
               />
@@ -38,11 +29,11 @@ const CartItem = ({ item: product }: CartItemProps) => {
 
           <div className="flex flex-col self-start">
             <span className="line-clamp-1 text-sm font-medium mb-1">
-              {product.name}
+              {name}
             </span>
 
             <span className="line-clamp-1 text-xs capitalize text-muted-foreground">
-              {product.label}
+              {label}
             </span>
 
             <div className="mt-4 text-xs text-muted-foreground">
@@ -55,7 +46,7 @@ const CartItem = ({ item: product }: CartItemProps) => {
         </div>
 
         <div className="flex flex-col space-y-1 font-medium">
-          <span className="ml-auto line-clamp-1 text-sm">{product.price}</span>
+          <span className="ml-auto line-clamp-1 text-sm">{price}</span>
         </div>
       </div>
     </div>

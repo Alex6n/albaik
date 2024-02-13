@@ -18,6 +18,7 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
     id,
     images,
     title,
+    categories,
     description,
     instock,
     price: { sar },
@@ -68,7 +69,19 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
           </Button>
         </div>
         <Button
-          onClick={() => dispatch(add({ id, quantity, spicy }))}
+          onClick={() =>
+            dispatch(
+              add({
+                id,
+                name: title,
+                image: images[0],
+                label: categories[0],
+                price: sar,
+                quantity,
+                spicy,
+              })
+            )
+          }
           disabled={instock > 0 ? false : true}
           className="my-0 rounded-[4px] border-none text-sm hover:translate-y-0"
         >
