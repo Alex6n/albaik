@@ -30,6 +30,9 @@ const CartItem = ({ item }: { item: CartItemProps }) => {
           <div className="flex flex-col self-start">
             <span className="line-clamp-1 text-sm font-medium mb-1">
               {name}
+              {quantity > 1 && (
+                <span className="text-[12px] text-zinc-500"> ×{quantity}</span>
+              )}
             </span>
 
             <span className="line-clamp-1 text-xs capitalize text-muted-foreground">
@@ -46,7 +49,9 @@ const CartItem = ({ item }: { item: CartItemProps }) => {
         </div>
 
         <div className="flex flex-col space-y-1 font-medium">
-          <span className="ml-auto line-clamp-1 text-sm">{price}</span>
+          <span className="ml-auto line-clamp-1 text-sm">
+            {price * quantity}
+          </span>
         </div>
       </div>
     </div>
