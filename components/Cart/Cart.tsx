@@ -17,8 +17,6 @@ import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
-// TODO: add scroll area wrapper to cart items
-
 const Cart = () => {
   const cart = useSelector((state: RootState) => state.cart);
 
@@ -40,7 +38,7 @@ const Cart = () => {
         {cart.length > 0 ? (
           <>
             <div className="flex w-full flex-col pr-6">
-              <ScrollArea>
+              <ScrollArea className="h-[60vh]">
                 {cart.map((item) => (
                   <CartItem item={item} key={item.id} />
                 ))}

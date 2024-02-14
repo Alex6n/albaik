@@ -31,7 +31,6 @@ export default function RootLayout({
   );
 }
 
-// TODO: if item already in cart just raise quantity
 // TODO: Remove from cart state
 // TODO: server state
 
