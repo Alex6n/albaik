@@ -13,6 +13,8 @@ export interface CartItemProps {
 
 const initialState: CartItemProps[] = [];
 
+// TODO: separate spicy items
+
 export const cartSlice = createSlice({
   name: "cart",
   initialState,

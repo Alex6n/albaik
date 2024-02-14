@@ -17,12 +17,20 @@ import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
+// TODO: add currency
+
 const Cart = () => {
   const cart = useSelector((state: RootState) => state.cart);
 
   const count = cart.reduce((accumulator, currentItem) => {
     return accumulator + currentItem.quantity;
   }, 0);
+
+  const cartTotal = cart.reduce((accumulator, currentItem) => {
+    return accumulator + currentItem.price * currentItem.quantity;
+  }, 0);
+
+  const fee = 3.5;
 
   return (
     <Sheet>
@@ -49,11 +57,15 @@ const Cart = () => {
               <div className="space-y-1.5 text-sm">
                 <div className="flex">
                   <span className="flex-1">Delivery Fee</span>
-                  <span>fee</span>
+                  <span>{fee}</span>
+                </div>
+                <div className="flex">
+                  <span className="flex-1">Cart Total</span>
+                  <span>{cartTotal}</span>
                 </div>
                 <div className="flex">
                   <span className="flex-1">Total</span>
-                  <span>cartTotal + fee</span>
+                  <span>{cartTotal + fee}</span>
                 </div>
               </div>
 

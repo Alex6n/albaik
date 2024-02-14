@@ -2,6 +2,8 @@ import { ImageIcon, X } from "lucide-react";
 import Image from "next/image";
 import { CartItemProps } from "./cartSlice";
 
+// TODO: add spicy indicator
+
 const CartItem = ({ item }: { item: CartItemProps }) => {
   const { id, name, image, label, price, quantity, spicy } = item;
 
