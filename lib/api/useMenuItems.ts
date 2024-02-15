@@ -5,7 +5,9 @@ export function useMenuItems() {
   return useQuery({
     queryKey: ["menuItems"],
     queryFn: async () =>
-      fetch("http://localhost:4000/menu").then((res) => res.json()),
+      fetch("https://api.npoint.io/691ffd844371f75b69e4/menu").then((res) =>
+        res.json()
+      ),
   });
 }
 
