@@ -59,7 +59,9 @@ const MenuList = () => {
                 } hover:opacity-50 transition-opacity w-full h-full`}
               >
                 <div className="bg-gradient-to-b h-[30%] w-full to-black/60 from-transparent absolute bottom-0">
-                  <h1 className="text-zinc-100 mx-2 mt-7">{details.title}</h1>
+                  <h1 className="text-zinc-100 mx-2 mt-9 line-clamp-1 text-sm">
+                    {details.title}
+                  </h1>
                 </div>
                 <Image
                   src={details.images[0]}
