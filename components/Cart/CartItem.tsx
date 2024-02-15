@@ -1,11 +1,12 @@
 import { ImageIcon, X } from "lucide-react";
 import Image from "next/image";
-import { CartItemProps } from "./cartSlice";
-
-// TODO: add spicy indicator
+import { CartItemProps, remove } from "./cartSlice";
+import { useDispatch } from "react-redux";
 
 const CartItem = ({ item }: { item: CartItemProps }) => {
-  const { id, name, image, label, price, quantity, spicy } = item;
+  const { name, image, label, price, quantity, spicy } = item;
+
+  const dispatch = useDispatch();
 
   return (
     <div className="space-y-3 py-2">
@@ -31,6 +32,7 @@ const CartItem = ({ item }: { item: CartItemProps }) => {
 
           <div className="flex flex-col self-start">
             <span className="line-clamp-1 text-sm font-medium mb-1">
+              {spicy && <span>Spicy </span>}
               {name}
               {quantity > 1 && (
                 <span className="text-[12px] text-zinc-500"> ×{quantity}</span>
@@ -42,7 +44,10 @@ const CartItem = ({ item }: { item: CartItemProps }) => {
             </span>
 
             <div className="mt-4 text-xs text-muted-foreground">
-              <button className="flex items-center gap-0.5">
+              <button
+                onClick={() => dispatch(remove(item))}
+                className="flex items-center gap-0.5"
+              >
                 <X className="w-3 h-4" />
                 Remove
               </button>
@@ -52,7 +57,7 @@ const CartItem = ({ item }: { item: CartItemProps }) => {
 
         <div className="flex flex-col space-y-1 font-medium">
           <span className="ml-auto line-clamp-1 text-sm">
-            {price * quantity}
+            {price * quantity} SAR
           </span>
         </div>
       </div>

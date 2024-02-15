@@ -17,8 +17,6 @@ import CartItem from "./CartItem";
 import { useSelector } from "react-redux";
 import { RootState } from "@/redux/store";
 
-// TODO: add currency
-
 const Cart = () => {
   const cart = useSelector((state: RootState) => state.cart);
 
@@ -57,15 +55,15 @@ const Cart = () => {
               <div className="space-y-1.5 text-sm">
                 <div className="flex">
                   <span className="flex-1">Delivery Fee</span>
-                  <span>{fee}</span>
+                  <span>{fee} SAR</span>
                 </div>
                 <div className="flex">
                   <span className="flex-1">Cart Total</span>
-                  <span>{cartTotal}</span>
+                  <span>{cartTotal} SAR</span>
                 </div>
                 <div className="flex">
                   <span className="flex-1">Total</span>
-                  <span>{cartTotal + fee}</span>
+                  <span>{(cartTotal + fee).toFixed(2)} SAR</span>
                 </div>
               </div>
 

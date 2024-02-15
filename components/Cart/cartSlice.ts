@@ -13,14 +13,15 @@ export interface CartItemProps {
 
 const initialState: CartItemProps[] = [];
 
-// TODO: separate spicy items
-
 export const cartSlice = createSlice({
   name: "cart",
   initialState,
   reducers: {
     add: (state, action: PayloadAction<CartItemProps>) => {
-      const existingItem = state.find((item) => item.id === action.payload.id);
+      const existingItem = state.find(
+        (item) =>
+          item.id === action.payload.id && item.spicy === action.payload.spicy
+      );
 
       if (existingItem) {
         existingItem.quantity += action.payload.quantity;
@@ -28,9 +29,11 @@ export const cartSlice = createSlice({
         state.push(action.payload);
       }
     },
+    remove: (state, action: PayloadAction<CartItemProps>) =>
+      state.filter((item) => item.id !== action.payload.id),
   },
 });
 
-export const { add } = cartSlice.actions;
+export const { add, remove } = cartSlice.actions;
 
 export default cartSlice.reducer;
