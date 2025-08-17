@@ -14,7 +14,7 @@ const PhoneInput = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
-        <div className="border-b border-black px-2 text-[13px] flex justify-center items-center cursor-pointer min-h-[36px]">
+        <div className="border-b border-black px-2 text-[13px] flex justify-end items-center cursor-pointer min-h-[36px]">
           <Image
             src={`/countries/${country}.png`}
             alt={country}
@@ -23,7 +23,7 @@ const PhoneInput = () => {
           />
         </div>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="bg-background">
+      <DropdownMenuContent align="start" className="bg-background">
         <DropdownMenuItem
           onClick={() => setCountry("sa")}
           className="hover:bg-primary/70 rounded-md hover:cursor-pointer"

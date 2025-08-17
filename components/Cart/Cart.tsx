@@ -73,7 +73,7 @@ const Cart = () => {
                     className="w-full text-center border-none rounded-md"
                     asChild
                   >
-                    <Link href="/cart">Continue to Checkout</Link>
+                    <Link href="/login">Continue to Checkout</Link>
                   </Button>
                 </SheetTrigger>
               </SheetFooter>
