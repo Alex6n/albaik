@@ -31,7 +31,6 @@ export default function RootLayout({
   );
 }
 
-// TODO: Remove from cart state
 // TODO: server state
 
 // TODO: Create Checkout Page

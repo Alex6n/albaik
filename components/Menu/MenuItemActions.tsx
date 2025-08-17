@@ -11,9 +11,14 @@ import { ItemContext, ItemContextType } from "../../lib/context/ItemContext";
 interface MenuItemActionsProps {
   className?: string;
   details: MenuItemType;
+  onClose?: () => void;
 }
 
-const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
+const MenuItemActions = ({
+  className,
+  details,
+  onClose,
+}: MenuItemActionsProps) => {
   const {
     id,
     images,
@@ -69,7 +74,7 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
           </Button>
         </div>
         <Button
-          onClick={() =>
+          onClick={() => {
             dispatch(
               add({
                 id,
@@ -80,8 +85,9 @@ const MenuItemActions = ({ className, details }: MenuItemActionsProps) => {
                 quantity,
                 spicy,
               })
-            )
-          }
+            );
+            if (onClose) onClose();
+          }}
           disabled={instock > 0 ? false : true}
           className="my-0 rounded-[4px] border-none text-sm hover:translate-y-0"
         >

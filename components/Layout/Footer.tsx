@@ -109,7 +109,7 @@ const Footer = ({ navItems, policyLinks }: FooterProps) => {
       </div>
 
       <div className="text-center text-background font-medium my-1">
-        © 2023 Copyright ALBAIK Food Systems Company.
+        <p>© 2023 Copyright ALBAIK Food Systems Company.</p>
         <p>
           ® All rights reserved ALBAIK and Logo are registered trademarks of the
           ELBAIK Food Systems Company S.A.

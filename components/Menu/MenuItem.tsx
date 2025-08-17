@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Dialog, DialogContent, DialogTrigger } from "../ui/dialog";
 import MenuItemDetails from "./MenuItemDetails";
 import MenuItemActions from "./MenuItemActions";
@@ -31,8 +31,10 @@ interface MenuItemProps {
 }
 
 const MenuItem = ({ children, className, details }: MenuItemProps) => {
+  const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger className={`${className}`}>{children}</DialogTrigger>
       <DialogContent>
         <ItemProvider>
@@ -41,7 +43,7 @@ const MenuItem = ({ children, className, details }: MenuItemProps) => {
               details={details}
               className="md:flex hidden border-r border-black/5"
             />
-            <MenuItemActions details={details} />
+            <MenuItemActions details={details} onClose={handleClose} />
           </div>
         </ItemProvider>
       </DialogContent>

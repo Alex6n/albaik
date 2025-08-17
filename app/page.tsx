@@ -36,9 +36,7 @@ export default function Home() {
     <main>
       <Hero
         title={Title}
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
-            beatae suscipit voluptatibus consequuntur dolore. Inventore nostrum
-            tenetur asperiores consectetur"
+        description="Flavorful chicken and delicious sides, served with a smile. Experience quality, tradition, and excellence in every bite."
         bgImage="/landing/home_hero.jpg"
       >
         <Button size="lg" className="px-10 rounded-xl" asChild>
